@@ -41,6 +41,20 @@ class LogoTests(unittest.TestCase):
         with self.assertRaises(FileExistsError):
             logos.fetch(self.args)
 
+    def test_local_png_search_metadata_drives_a_valid_download(self):
+        self.args.offline = True
+        self.args.query = 'Higgsfield'
+        with contextlib.redirect_stdout(io.StringIO()) as out:
+            self.assertEqual(logos.search(self.args), 0)
+        item = next(row for row in json.loads(out.getvalue())['results'] if row['variant'] == 'site-icon')
+        self.assertEqual(item['format'], 'png')
+        self.args.brand, self.args.variant = item['id'], item['variant']
+        self.args.output = str(self.directory / ('higgsfield.' + item['format']))
+        self.args.force = False
+        with contextlib.redirect_stdout(io.StringIO()):
+            self.assertEqual(logos.fetch(self.args), 0)
+        self.assertTrue(Path(self.args.output).read_bytes().startswith(b'\x89PNG\r\n\x1a\n'))
+
     def test_checksum_mismatch_does_not_write(self):
         catalog = json.loads((ROOT / 'catalog.json').read_text())
         catalog = copy.deepcopy(catalog)

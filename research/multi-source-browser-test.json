@@ -1,0 +1,516 @@
+{
+  "checked_at": "2026-11-13T08:19:23.097Z",
+  "kind": "real-browser-multi-source-gallery",
+  "skill_base_commit": "6dd50b6a0c8e778aca288821a9dd361206382d38",
+  "browser": {
+    "language": "en-US",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) T3CodeBeta/0.1.9 Chrome/152.0.7977.169 Electron/44.10.1 Safari/537.36"
+  },
+  "images": 12,
+  "sources": 11,
+  "desktop_live": {
+    "errors": [],
+    "overflow": false,
+    "scheme": false,
+    "state": {
+      "done": true,
+      "failed": 0,
+      "loaded": 12,
+      "mode": "live",
+      "results": [
+        {
+          "height": 150,
+          "id": "simple-icons-mono",
+          "loaded": true,
+          "transport": "remote",
+          "width": 150
+        },
+        {
+          "height": 16,
+          "id": "lobe-claude-color",
+          "loaded": true,
+          "transport": "remote",
+          "width": 16
+        },
+        {
+          "height": 256,
+          "id": "gilbarbara-higgsfield-icon",
+          "loaded": true,
+          "transport": "remote",
+          "width": 256
+        },
+        {
+          "height": 64,
+          "id": "vectorlogozone-slack-icon",
+          "loaded": true,
+          "transport": "remote",
+          "width": 64
+        },
+        {
+          "height": 150,
+          "id": "devicon-python-original",
+          "loaded": true,
+          "transport": "remote",
+          "width": 150
+        },
+        {
+          "height": 150,
+          "id": "selfhst-nextcloud",
+          "loaded": true,
+          "transport": "remote",
+          "width": 150
+        },
+        {
+          "height": 150,
+          "id": "dashboard-icons-adguard-home",
+          "loaded": true,
+          "transport": "remote",
+          "width": 150
+        },
+        {
+          "height": 150,
+          "id": "crypto-color",
+          "loaded": true,
+          "transport": "remote",
+          "width": 150
+        },
+        {
+          "height": 192,
+          "id": "ours-site-icon",
+          "loaded": true,
+          "transport": "remote",
+          "width": 192
+        },
+        {
+          "height": 132,
+          "id": "ours-heygen-symbol-black-logo",
+          "loaded": true,
+          "transport": "remote",
+          "width": 132
+        },
+        {
+          "height": 150,
+          "id": "svgl-route-light",
+          "loaded": true,
+          "transport": "remote",
+          "width": 119
+        },
+        {
+          "height": 222,
+          "id": "thesvg-light",
+          "loaded": true,
+          "transport": "remote",
+          "width": 256
+        }
+      ],
+      "total": 12
+    },
+    "viewport": {
+      "height": 1500,
+      "width": 1400
+    }
+  },
+  "desktop_saved": {
+    "allEmbedded": true,
+    "errors": [],
+    "overflow": false,
+    "state": {
+      "done": true,
+      "failed": 0,
+      "loaded": 12,
+      "mode": "saved",
+      "results": [
+        {
+          "height": 150,
+          "id": "svgl-route-light",
+          "loaded": true,
+          "transport": "saved",
+          "width": 119
+        },
+        {
+          "height": 16,
+          "id": "lobe-claude-color",
+          "loaded": true,
+          "transport": "saved",
+          "width": 16
+        },
+        {
+          "height": 150,
+          "id": "simple-icons-mono",
+          "loaded": true,
+          "transport": "saved",
+          "width": 150
+        },
+        {
+          "height": 222,
+          "id": "thesvg-light",
+          "loaded": true,
+          "transport": "saved",
+          "width": 256
+        },
+        {
+          "height": 256,
+          "id": "gilbarbara-higgsfield-icon",
+          "loaded": true,
+          "transport": "saved",
+          "width": 256
+        },
+        {
+          "height": 64,
+          "id": "vectorlogozone-slack-icon",
+          "loaded": true,
+          "transport": "saved",
+          "width": 64
+        },
+        {
+          "height": 150,
+          "id": "devicon-python-original",
+          "loaded": true,
+          "transport": "saved",
+          "width": 150
+        },
+        {
+          "height": 150,
+          "id": "selfhst-nextcloud",
+          "loaded": true,
+          "transport": "saved",
+          "width": 150
+        },
+        {
+          "height": 150,
+          "id": "dashboard-icons-adguard-home",
+          "loaded": true,
+          "transport": "saved",
+          "width": 150
+        },
+        {
+          "height": 150,
+          "id": "crypto-color",
+          "loaded": true,
+          "transport": "saved",
+          "width": 150
+        },
+        {
+          "height": 192,
+          "id": "ours-site-icon",
+          "loaded": true,
+          "transport": "saved",
+          "width": 192
+        },
+        {
+          "height": 132,
+          "id": "ours-heygen-symbol-black-logo",
+          "loaded": true,
+          "transport": "saved",
+          "width": 132
+        }
+      ],
+      "total": 12
+    }
+  },
+  "mobile_saved": {
+    "errors": [],
+    "gridColumns": "190px 190px",
+    "overflow": false,
+    "state": {
+      "done": true,
+      "failed": 0,
+      "loaded": 12,
+      "mode": "saved",
+      "results": [
+        {
+          "height": 150,
+          "id": "svgl-route-light",
+          "loaded": true,
+          "transport": "saved",
+          "width": 119
+        },
+        {
+          "height": 16,
+          "id": "lobe-claude-color",
+          "loaded": true,
+          "transport": "saved",
+          "width": 16
+        },
+        {
+          "height": 150,
+          "id": "simple-icons-mono",
+          "loaded": true,
+          "transport": "saved",
+          "width": 150
+        },
+        {
+          "height": 222,
+          "id": "thesvg-light",
+          "loaded": true,
+          "transport": "saved",
+          "width": 256
+        },
+        {
+          "height": 256,
+          "id": "gilbarbara-higgsfield-icon",
+          "loaded": true,
+          "transport": "saved",
+          "width": 256
+        },
+        {
+          "height": 64,
+          "id": "vectorlogozone-slack-icon",
+          "loaded": true,
+          "transport": "saved",
+          "width": 64
+        },
+        {
+          "height": 150,
+          "id": "devicon-python-original",
+          "loaded": true,
+          "transport": "saved",
+          "width": 150
+        },
+        {
+          "height": 150,
+          "id": "selfhst-nextcloud",
+          "loaded": true,
+          "transport": "saved",
+          "width": 150
+        },
+        {
+          "height": 150,
+          "id": "dashboard-icons-adguard-home",
+          "loaded": true,
+          "transport": "saved",
+          "width": 150
+        },
+        {
+          "height": 150,
+          "id": "crypto-color",
+          "loaded": true,
+          "transport": "saved",
+          "width": 150
+        },
+        {
+          "height": 192,
+          "id": "ours-site-icon",
+          "loaded": true,
+          "transport": "saved",
+          "width": 192
+        },
+        {
+          "height": 132,
+          "id": "ours-heygen-symbol-black-logo",
+          "loaded": true,
+          "transport": "saved",
+          "width": 132
+        }
+      ],
+      "total": 12
+    },
+    "viewport": {
+      "height": 844,
+      "width": 390
+    }
+  },
+  "mobile_live": {
+    "errors": [],
+    "overflow": false,
+    "state": {
+      "done": true,
+      "failed": 0,
+      "loaded": 12,
+      "mode": "live",
+      "results": [
+        {
+          "height": 132,
+          "id": "ours-heygen-symbol-black-logo",
+          "loaded": true,
+          "transport": "remote",
+          "width": 132
+        },
+        {
+          "height": 150,
+          "id": "svgl-route-light",
+          "loaded": true,
+          "transport": "remote",
+          "width": 119
+        },
+        {
+          "height": 16,
+          "id": "lobe-claude-color",
+          "loaded": true,
+          "transport": "remote",
+          "width": 16
+        },
+        {
+          "height": 150,
+          "id": "simple-icons-mono",
+          "loaded": true,
+          "transport": "remote",
+          "width": 150
+        },
+        {
+          "height": 222,
+          "id": "thesvg-light",
+          "loaded": true,
+          "transport": "remote",
+          "width": 256
+        },
+        {
+          "height": 256,
+          "id": "gilbarbara-higgsfield-icon",
+          "loaded": true,
+          "transport": "remote",
+          "width": 256
+        },
+        {
+          "height": 64,
+          "id": "vectorlogozone-slack-icon",
+          "loaded": true,
+          "transport": "remote",
+          "width": 64
+        },
+        {
+          "height": 150,
+          "id": "devicon-python-original",
+          "loaded": true,
+          "transport": "remote",
+          "width": 150
+        },
+        {
+          "height": 150,
+          "id": "selfhst-nextcloud",
+          "loaded": true,
+          "transport": "remote",
+          "width": 150
+        },
+        {
+          "height": 150,
+          "id": "dashboard-icons-adguard-home",
+          "loaded": true,
+          "transport": "remote",
+          "width": 150
+        },
+        {
+          "height": 150,
+          "id": "crypto-color",
+          "loaded": true,
+          "transport": "remote",
+          "width": 150
+        },
+        {
+          "height": 192,
+          "id": "ours-site-icon",
+          "loaded": true,
+          "transport": "remote",
+          "width": 192
+        }
+      ],
+      "total": 12
+    },
+    "viewport": {
+      "height": 844,
+      "width": 390
+    }
+  },
+  "provenance_details": {
+    "detailsOpen": true,
+    "errors": [],
+    "overflow": false,
+    "shaVisible": true
+  },
+  "network": [
+    {
+      "url": "https://raw.githubusercontent.com/simple-icons/simple-icons/cd796c98565fc466923fc1128b962e133fa3c612/icons/github.svg",
+      "method": "GET",
+      "status": 200,
+      "failed": false,
+      "timestamp": "2026-11-13T08:16:49.643Z"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/lxf82dev/open-brand-assets/main/brands/higgsfield/site-icon.png",
+      "method": "GET",
+      "status": 200,
+      "failed": false,
+      "timestamp": "2026-11-13T08:16:49.644Z"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/lxf82dev/open-brand-assets/main/brands/heygen/heygen-symbol-black-logo.svg",
+      "method": "GET",
+      "status": 200,
+      "failed": false,
+      "timestamp": "2026-11-13T08:16:49.645Z"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/lobehub/lobe-icons/a177c1e817204f8ddc0c8993610ca674fc6d9767/packages/static-svg/icons/claude-color.svg",
+      "method": "GET",
+      "status": 200,
+      "failed": false,
+      "timestamp": "2026-11-13T08:16:49.645Z"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/gilbarbara/logos/b9edc65f8946027cb5e2fe6c772e914cf3649fba/logos/higgsfield-icon.svg",
+      "method": "GET",
+      "status": 200,
+      "failed": false,
+      "timestamp": "2026-11-13T08:16:49.645Z"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/VectorLogoZone/vectorlogozone/7442420d3dc3ae97476fc57a64edfbfd7be95e24/src/content/logos/slack/slack-icon.svg",
+      "method": "GET",
+      "status": 200,
+      "failed": false,
+      "timestamp": "2026-11-13T08:16:49.646Z"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/devicons/devicon/32fe1d3b3f36ad11f90ab94f7db59738139c2bf6/icons/python/python-original.svg",
+      "method": "GET",
+      "status": 200,
+      "failed": false,
+      "timestamp": "2026-11-13T08:16:49.648Z"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/selfhst/icons/2102cc3ccf73394541eab751c1bc8f35deb79e06/svg/nextcloud.svg",
+      "method": "GET",
+      "status": 200,
+      "failed": false,
+      "timestamp": "2026-11-13T08:16:49.648Z"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/homarr-labs/dashboard-icons/d767d7327db7f8ebd3715b552523f61889eea41c/svg/adguard-home.svg",
+      "method": "GET",
+      "status": 200,
+      "failed": false,
+      "timestamp": "2026-11-13T08:16:49.649Z"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/spothq/cryptocurrency-icons/1a63530be6e374711a8554f31b17e4cb92c25fa5/svg/color/btc.svg",
+      "method": "GET",
+      "status": 200,
+      "failed": false,
+      "timestamp": "2026-11-13T08:16:49.649Z"
+    },
+    {
+      "url": "https://svgl.app/library/astro-icon-light.svg",
+      "method": "GET",
+      "status": 200,
+      "failed": false,
+      "timestamp": "2026-11-13T08:16:49.803Z"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/glincker/thesvg/8d1934ccc6329da24d2db703eaaf57487ed4c31d/public/icons/vercel/light.svg",
+      "method": "GET",
+      "status": 200,
+      "failed": false,
+      "timestamp": "2026-11-13T08:16:50.091Z"
+    }
+  ],
+  "console_entries": [],
+  "notes": [
+    "Built through the skill CLI's source-specific searches and exact-variant retrieval; upstream asset bytes validated before writing the page.",
+    "Live-source mode issued actual browser image requests. All twelve returned HTTP 200 and decoded to nonzero dimensions.",
+    "Saved-copy mode uses data URLs for every image. This verifies self-contained rendering; the browser network was not globally disabled.",
+    "Checked desktop and 390px mobile layouts, theme changes, provenance disclosure, and the live/saved toggle.",
+    "Visual inspection identified a white Vercel default mark on a white tile. Selected the supplied light-background variant without altering the artwork.",
+    "Found and fixed missing format metadata for our PNG search results; regression test added."
+  ],
+  "skill_cli_sha256": "e5c61248e1bc6b4acadf50ce78e43cbda724e9affce1bec2cb4edb6d0b9b1c78"
+}

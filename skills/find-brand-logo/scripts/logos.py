@@ -95,7 +95,7 @@ def source_rows(source, args):
         for brand in catalog['brands']:
             for asset in brand['assets']:
                 rows.append(row(source, brand['name'], asset['id'], RAW + asset['file'], id=brand['id'],
-                    aliases=brand['aliases'], role=asset['role'], theme=asset['theme'],
+                    aliases=brand['aliases'], role=asset['role'], theme=asset['theme'], format=asset['format'],
                     sha256=asset['sha256'], file=asset['file'], provenance=asset['source'],
                     usage=brand['usage'], license=asset['rights']['license'], note=asset.get('note')))
         return rows, {'checked_at': checked, 'cached': cached}

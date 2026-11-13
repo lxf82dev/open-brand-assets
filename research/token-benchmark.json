@@ -1,5 +1,5 @@
 {
-  "measured_at": "2026-11-13T05:54:21+00:00",
+  "measured_at": "2026-11-13T08:11:45+00:00",
   "kind": "controlled-context-payload-comparison-not-agent-billing",
   "task": "Retrieve one supplied logo variant each for HeyGen, Black Forest Labs, and OpenRouter, retaining source/hash receipts.",
   "tokenizer": {
@@ -7,9 +7,9 @@
     "version": "0.12.0",
     "encoding": "o200k_base"
   },
-  "root_commit": "952d732ddf6798ef389d3edf1113dc1ccbaf597d",
+  "root_commit": "6dd50b6a0c8e778aca288821a9dd361206382d38",
   "working_tree_dirty": true,
-  "cli_sha256": "923b885450c9e787cce023be19bfc63e633ed3987447d2703cc3a353f8cd9a5b",
+  "cli_sha256": "e5c61248e1bc6b4acadf50ce78e43cbda724e9affce1bec2cb4edb6d0b9b1c78",
   "inputs": {
     "pages": [
       {

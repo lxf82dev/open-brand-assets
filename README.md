@@ -128,6 +128,8 @@ python3 logos.py search "LibTV" --offline --limit 1
 
 `fetch` handles our catalog's exact variants, checks the SHA-256 and supported image content, prints provenance and usage notes, and refuses to overwrite an existing file without `--force`. For upstream candidates, download the returned URL and preserve the applicable notices. `--offline` uses only a full checkout's local catalog and files.
 
+Try the [multi-source HTML gallery](examples/multi-source-gallery/README.md): it exercises twelve real images from all eleven collections, including live-source and self-contained saved-copy rendering. See the [browser verification record](research/multi-source-browser-test.json).
+
 The [public catalog](catalog.json) is generated from `brands/*/brand.json`. For reproducible builds, pin a commit when consuming assets directly:
 
 ```text
