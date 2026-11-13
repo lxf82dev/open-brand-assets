@@ -19,6 +19,10 @@ Your agent is building an integration grid, a provider picker, a landing page, o
 
 **Open Brand Assets gives the agent a repeatable lookup and retrieval workflow.** Python searches our collection and four established open-source catalogs. The model reads matching results; image bytes are saved to disk. Each file in our collection has a source URL, date, variant, usage note, and SHA-256.
 
+![Context-text comparison: 4,050 tokens without the skill through page reading; 1,675 with the skill through targeted lookups, including instructions. A 58.6% reduction in this example.](docs/token-comparison.svg)
+
+*Measured three-logo example, including skill instructions. [See the breakdown and limits](#token-comparison).*
+
 ## Install the skill
 
 ```bash
@@ -57,8 +61,6 @@ Public catalogs are cached for 24 hours. That avoids repeated network downloads;
 ## Token comparison
 
 **Measured example: retrieve one supplied logo variant each for HeyGen, Black Forest Labs, and OpenRouter.** Compare reading the three known official brand pages with targeted lookups in our known catalog coverage.
-
-![Context-text comparison: 4,050 tokens without the skill through page reading; 1,675 with the skill through targeted lookups, including instructions. A 58.6% reduction in this example.](docs/token-comparison.svg)
 
 | Counted text | Without skill: read brand pages | With skill: targeted lookups |
 | --- | ---: | ---: |
