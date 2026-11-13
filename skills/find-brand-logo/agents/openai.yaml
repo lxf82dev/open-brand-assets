@@ -1,4 +1,4 @@
 interface:
   display_name: "Find Brand Logo"
-  short_description: "Find real logos across five public collections"
+  short_description: "Find real logos across eleven public collections"
   default_prompt: "Use $find-brand-logo to find the right official logo variant, retrieve it, and record its source and usage conditions."

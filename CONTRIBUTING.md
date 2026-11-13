@@ -1,6 +1,6 @@
 # Contributing
 
-Add a missing brand, a current official variant, or a correction to source/usage information. Look in our catalog and the four upstream collections first; a dated official variant or a useful source record can still be worth adding when a brand exists elsewhere.
+Add a missing brand, a current official variant, or a correction to source/usage information. Look in our catalog and the ten upstream collections first; a dated official variant or a useful source record can still be worth adding when a brand exists elsewhere.
 
 ## Add or update a brand
 

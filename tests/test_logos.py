@@ -68,13 +68,91 @@ class LogoTests(unittest.TestCase):
         with patch.object(logos, 'source_rows', side_effect=adapter), contextlib.redirect_stdout(io.StringIO()) as out:
             self.assertEqual(logos.search(self.args), 0)
         result = json.loads(out.getvalue())
-        self.assertEqual(len(result['results']), 4)
+        self.assertEqual(len(result['results']), len(logos.SOURCES) - 1)
         self.assertEqual(result['errors'], {'lobe': 'upstream unavailable'})
 
     def test_total_failure_returns_failure(self):
         with patch.object(logos, 'source_rows', side_effect=OSError('offline')), contextlib.redirect_stdout(io.StringIO()) as out:
             self.assertEqual(logos.search(self.args), 1)
-        self.assertEqual(len(json.loads(out.getvalue())['errors']), 5)
+        self.assertEqual(len(json.loads(out.getvalue())['errors']), len(logos.SOURCES))
+
+    def test_new_source_layouts_metadata_and_pinned_urls(self):
+        fixture = {'sha': 'fixed-revision', 'truncated': False, 'tree': [
+            {'path': 'logos/react.svg', 'type': 'blob'},
+            {'path': 'src/content/logos/github/github-icon.svg', 'type': 'blob'},
+            {'path': 'public/images/about/not-a-brand.svg', 'type': 'blob'},
+            {'path': 'icons/aarch64/aarch64-original.svg', 'type': 'blob'},
+            {'path': 'svg/nextcloud-light.svg', 'type': 'blob'},
+            {'path': 'svg/color/btc.svg', 'type': 'blob'},
+            {'path': 'originals/btc.svg', 'type': 'blob'},
+        ]}
+        cases = [
+            ('gilbarbara', [{'name': 'React', 'shortname': 'reactjs', 'files': ['react.svg'], 'url': 'https://react.dev'}], 'React', 'reactjs'),
+            ('vectorlogozone', [], 'github', 'github'),
+            ('devicon', [{'name': 'aarch64', 'altnames': ['arm64']}], 'aarch64', 'arm64'),
+            ('selfhst', [{'Name': 'Nextcloud', 'Reference': 'nextcloud'}], 'Nextcloud', 'nextcloud'),
+            ('dashboard-icons', [], 'nextcloud', 'nextcloud'),
+            ('crypto', [{'symbol': 'BTC', 'name': 'Bitcoin'}], 'Bitcoin', 'btc'),
+        ]
+        for source, records, expected, query in cases:
+            calls = []
+            def get(url, *args):
+                calls.append(url)
+                return (fixture if '/git/trees/' in url else records), 'now', False
+            with self.subTest(source=source), patch.object(logos, 'get_json', side_effect=get):
+                rows, report = logos.source_rows(source, self.args)
+                self.assertEqual(len(rows), 1)
+                self.assertEqual(rows[0]['brand'], expected)
+                self.assertEqual(logos.rank(rows[0], logos.normalize(query)), 0)
+                self.assertIn('/fixed-revision/', rows[0]['url'])
+                self.assertIn('/fixed-revision/', rows[0]['license_url'])
+                self.assertEqual(report['revision'], 'fixed-revision')
+                if len(calls) == 2:
+                    self.assertIn('/fixed-revision/', calls[1])
+                if source == 'vectorlogozone':
+                    self.assertIn('website code', rows[0]['rights_note'])
+                if source == 'selfhst':
+                    self.assertIn('CC-BY-4.0', rows[0]['attribution'])
+
+    def test_service_sources_include_png_only_fallback_without_duplicates(self):
+        fixture = {'sha': 'fixed', 'truncated': False, 'tree': [
+            {'path': 'svg/example.svg', 'type': 'blob'},
+            {'path': 'png/example.png', 'type': 'blob'},
+            {'path': 'png/raster-only.png', 'type': 'blob'},
+            {'path': 'webp/raster-only.webp', 'type': 'blob'},
+        ]}
+        for source in ('selfhst', 'dashboard-icons'):
+            with self.subTest(source=source), patch.object(logos, 'get_json', side_effect=lambda url, *args: (fixture if '/git/trees/' in url else [], 'now', False)):
+                rows, _ = logos.source_rows(source, self.args)
+                self.assertEqual(len(rows), 2)
+                self.assertEqual({r['format'] for r in rows}, {'svg', 'png'})
+                self.assertFalse(any('/png/example.png' in r['url'] for r in rows))
+
+    def test_crypto_symbol_url_is_escaped_and_searchable_by_name(self):
+        fixture = {'sha': 'fixed', 'truncated': False, 'tree': [{'path': 'svg/color/$pac.svg', 'type': 'blob'}]}
+        with patch.object(logos, 'get_json', side_effect=[(fixture, 'now', False), ([{'name': 'PACcoin', 'symbol': '$PAC'}], 'now', False)]):
+            rows, _ = logos.source_rows('crypto', self.args)
+        self.assertIn('/%24pac.svg', rows[0]['url'])
+        self.assertEqual(logos.rank(rows[0], 'paccoin'), 0)
+
+    def test_unreadable_metadata_is_reported_as_source_failure(self):
+        fixture = {'sha': 'fixed', 'truncated': False, 'tree': []}
+        self.args.source = 'crypto'
+        with patch.object(logos, 'get_json', side_effect=[(fixture, 'now', False), ({'unexpected': 'shape'}, 'now', False)]), contextlib.redirect_stdout(io.StringIO()) as out:
+            self.assertEqual(logos.search(self.args), 1)
+        result = json.loads(out.getvalue())
+        self.assertEqual(set(result['errors']), {'crypto'})
+        self.assertEqual(result['sources'], {})
+
+    def test_plain_text_retains_required_attribution_and_rights_notes(self):
+        self.args.json = False
+        self.args.source = 'selfhst'
+        item = logos.row('selfhst', 'OpenRouter', 'default', 'https://example.com/icon.svg',
+                         attribution='CC-BY-4.0 selfh.st contributors', rights_note='Brand rights remain separate')
+        with patch.object(logos, 'source_rows', return_value=([item], {'checked_at': 'now'})), contextlib.redirect_stdout(io.StringIO()) as out:
+            self.assertEqual(logos.search(self.args), 0)
+        self.assertIn('Attribution: CC-BY-4.0 selfh.st contributors', out.getvalue())
+        self.assertIn('Rights: Brand rights remain separate', out.getvalue())
 
     def test_svgl_variants_and_brand_guidelines(self):
         self.args.source = 'svgl'

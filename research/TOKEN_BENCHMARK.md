@@ -25,13 +25,13 @@ Measured on **2026-11-13**, using `tiktoken==0.12.0` and `o200k_base`:
 | Component | Tokens |
 | --- | ---: |
 | Three official pages, readable text and asset URLs | 3,399 |
-| Complete skill instructions | 811 |
+| Complete skill instructions | 906 |
 | Three targeted lookup outputs | 213 |
 | Shared receipt output, counted on each side | 651 |
 | Without skill: page reading + receipts | **4,050** |
-| With skill: instructions + lookups + receipts | **1,675** |
+| With skill: instructions + lookups + receipts | **1,770** |
 
-The difference is **2,375 text tokens**, or **58.6%** of the baseline. Counts are summed across separately tokenized payloads. The [JSON report](token-benchmark.json) records page URLs, source-content hashes, the code commit, skill hash, commands, variants, and tokenizer version.
+The difference is **2,280 text tokens**, or **56.3%** of the baseline. Counts are summed across separately tokenized payloads. The [JSON report](token-benchmark.json) records page URLs, source-content hashes, the base Git commit, working-tree state, CLI and skill hashes, commands, variants, and tokenizer version. When `working_tree_dirty` is true, the input file hashes identify the measured working copy; `root_commit` identifies its base commit.
 
 ## Reproduce
 

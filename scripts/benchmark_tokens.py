@@ -122,6 +122,8 @@ def main():
         'task': 'Retrieve one supplied logo variant each for HeyGen, Black Forest Labs, and OpenRouter, retaining source/hash receipts.',
         'tokenizer': {'package': 'tiktoken', 'version': importlib.metadata.version('tiktoken'), 'encoding': 'o200k_base'},
         'root_commit': subprocess.run(['git', 'rev-parse', 'HEAD'], cwd=root, capture_output=True, text=True, check=True).stdout.strip(),
+        'working_tree_dirty': bool(subprocess.run(['git', 'status', '--porcelain'], cwd=root, capture_output=True, text=True, check=True).stdout.strip()),
+        'cli_sha256': hashlib.sha256((root / 'skills/find-brand-logo/scripts/logos.py').read_bytes()).hexdigest(),
         'inputs': {'pages': source_pages, 'lookups': lookups, 'receipts': receipts,
             'skill_instructions': {'tokens': instructions, 'sha256': hashlib.sha256(instruction.encode()).hexdigest()}},
         'totals': {'without_skill_page_reading': without, 'with_skill_targeted_lookup': with_skill,

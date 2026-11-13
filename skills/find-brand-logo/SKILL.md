@@ -1,6 +1,6 @@
 ---
 name: find-brand-logo
-description: Find and retrieve existing company, product, and AI provider logos with provenance from Open Brand Assets, SVGL, Lobe Icons, Simple Icons, and theSVG. Use when a task needs real brand assets or a missing logo contributed; excludes designing or redrawing a logo.
+description: Find and retrieve existing company, product, developer-tool, self-hosted app, AI provider, and cryptocurrency logos with provenance across public catalogs. Use when a task needs real brand assets or a missing logo contributed; excludes designing or redrawing a logo.
 ---
 
 # Find Brand Logo
@@ -9,9 +9,9 @@ Use existing artwork and retain its source. This skill includes a standalone Pyt
 
 ## Find a suitable asset
 
-Run `python3 <skill-directory>/scripts/logos.py search "brand name" --json`.
+Run `python3 <skill-directory>/scripts/logos.py search "brand name" --limit 1`. If our catalog is known to carry the brand, add `--source ours`; if the exact variant is already known, fetch it directly.
 
-The default searches our complementary catalog plus SVGL, Lobe Icons, Simple Icons, and theSVG. Results include source URLs, variants, and available guideline metadata. `--refresh` bypasses the 24-hour cache. Check `errors` before concluding a brand is missing; an unavailable source has not been checked. Try the product name, parent company, and known aliases when needed.
+The default searches eleven collections. Use small limits and plain text for a shortlist; increase the limit to inspect more variants. Add `--json` for source statuses and full metadata. `--refresh` bypasses the 24-hour cache. Check warnings or JSON `errors` before concluding a brand is missing; an unavailable source has not been checked. Try product names, parent companies, and aliases when needed. The [source reference](references/sources.md) lists all collections and their names for `--source`.
 
 Prefer official brand-kit artwork for the requested product and visual context. Our catalog supplies dated provenance and background hints; upstream collections can have better coverage. A website favicon is labelled `site-icon`, and is not evidence that a full logo or vector version exists. Inspect the actual artwork before using it. Choose supplied light/dark/color/wordmark variants; do not redraw or recolor a trademark to approximate a missing variant.
 
@@ -30,6 +30,8 @@ python3 <skill-directory>/scripts/logos.py fetch openrouter --variant glyph-ink 
 The CLI verifies the recorded SHA-256 and image format, rejects unsupported active SVG content, and refuses to overwrite files without `--force`. In a full checkout, `--offline` searches and retrieves local files without network access. A separately installed skill retrieves our current catalog and assets from `lxf82dev/open-brand-assets` on GitHub.
 
 For an upstream result, retrieve its returned URL with the available download tool, preserve required upstream attribution/license notices, inspect the bytes, and record the source URL, variant, retrieval date, and file hash alongside the output. Read [source details](references/sources.md) when selecting a library or handling a failed adapter.
+
+selfh.st requires collection attribution. Vector Logo Zone's website license does not relicense vendor logos. Keep these returned attribution/rights notes with the asset. Crypto symbols can be ambiguous; verify the currency name and symbol together.
 
 Report the chosen source and any relevant usage condition with the delivered file. `guidelines-available` means guidelines exist, not blanket approval. `permission-required` and `unverified` are unresolved conditions; do not silently describe those assets as cleared. Repository licenses do not grant rights to vendor trademarks. Check the actual terms for the intended context, and distinguish editorial reference from marketing or endorsement.
 

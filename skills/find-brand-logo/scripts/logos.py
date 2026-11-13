@@ -20,7 +20,18 @@ import xml.etree.ElementTree as ET
 REPO = 'lxf82dev/open-brand-assets'
 RAW = f'https://raw.githubusercontent.com/{REPO}/main/'
 LOCAL_ROOT = Path(__file__).resolve().parents[3]
-SOURCES = ('ours', 'svgl', 'lobe', 'simple-icons', 'thesvg')
+GITHUB_SOURCES = {
+    'lobe': ('lobehub/lobe-icons', 'master', 'MIT', 'LICENSE', None),
+    'simple-icons': ('simple-icons/simple-icons', 'develop', 'CC0-1.0', 'LICENSE.md', None),
+    'thesvg': ('glincker/thesvg', 'main', 'MIT', 'LICENSE', None),
+    'gilbarbara': ('gilbarbara/logos', 'main', 'CC0-1.0', 'LICENSE.txt', 'logos.json'),
+    'vectorlogozone': ('VectorLogoZone/vectorlogozone', 'main', 'AGPL-3.0', 'LICENSE.txt', None),
+    'devicon': ('devicons/devicon', 'master', 'MIT', 'LICENSE', 'devicon.json'),
+    'selfhst': ('selfhst/icons', 'main', 'CC-BY-4.0', 'LICENSE', 'index.json'),
+    'dashboard-icons': ('homarr-labs/dashboard-icons', 'main', 'Apache-2.0', 'LICENSE', None),
+    'crypto': ('spothq/cryptocurrency-icons', 'master', 'CC0-1.0', 'LICENSE.md', 'manifest.json'),
+}
+SOURCES = ('ours', 'svgl', *GITHUB_SOURCES)
 MAX_BYTES = 32 * 1024 * 1024
 
 def normalize(value):
@@ -100,19 +111,40 @@ def source_rows(source, args):
                         website=brand.get('url'), guidelines=brand.get('brandUrl'),
                         library_license='MIT', usage_status='check-brand-guidelines'))
         return rows, {'checked_at': checked, 'cached': cached}
-    repo, branch = {'lobe': ('lobehub/lobe-icons', 'master'),
-                    'simple-icons': ('simple-icons/simple-icons', 'develop'),
-                    'thesvg': ('glincker/thesvg', 'main')}[source]
+    repo, branch, license_id, license_file, metadata_file = GITHUB_SOURCES[source]
     tree, checked, cached = get_json(f'https://api.github.com/repos/{repo}/git/trees/{branch}?recursive=1', args.cache_dir, args.refresh)
     if tree.get('truncated'):
         raise ValueError('Upstream tree is truncated; use the upstream search directly')
     revision = tree['sha']
+    raw_base = f'https://raw.githubusercontent.com/{repo}/{revision}/'
+    metadata = {}
+    if metadata_file:
+        records, _, _ = get_json(raw_base + metadata_file, args.cache_dir, args.refresh)
+        if not isinstance(records, list) or not all(isinstance(record, dict) for record in records):
+            raise ValueError(f'{source} metadata must be an array of records')
+        for record in records:
+            if source == 'gilbarbara':
+                for filename in record.get('files', []):
+                    metadata[filename] = record
+            else:
+                key = record.get({'devicon': 'name', 'selfhst': 'Reference', 'crypto': 'symbol'}[source])
+                if isinstance(key, str):
+                    metadata[key.casefold()] = record
+    paths = {item['path'] for item in tree['tree'] if item.get('type') == 'blob'}
     rows = []
     for item in tree['tree']:
         path = item['path']
-        if item.get('type') != 'blob' or not path.endswith('.svg'):
+        extension = Path(path).suffix.lower()
+        if item.get('type') != 'blob' or extension not in ('.svg', '.png'):
             continue
         parts = path.split('/')
+        if extension == '.png':
+            # These collections include PNG-only services. Prefer SVG when supplied.
+            if source not in ('selfhst', 'dashboard-icons') or len(parts) != 2 or parts[0] != 'png':
+                continue
+            if 'svg/' + Path(path).stem + '.svg' in paths:
+                continue
+        extra = {}
         if source == 'lobe' and path.startswith('packages/static-svg/icons/'):
             name = parts[-1][:-4]
             brand = re.sub(r'-(color|text|brand|text-cn|text-en)$', '', name)
@@ -121,12 +153,38 @@ def source_rows(source, args):
             brand, variant = parts[-1][:-4], 'mono'
         elif source == 'thesvg' and len(parts) == 4 and parts[:2] == ['public', 'icons']:
             brand, variant = parts[2], parts[3][:-4]
+        elif source == 'gilbarbara' and len(parts) == 2 and parts[0] == 'logos':
+            record = metadata.get(parts[1], {})
+            brand = record.get('name') or re.sub(r'-(icon|wordmark|dark|light|mono)(?:-.*)?$', '', Path(path).stem)
+            variant = Path(path).stem
+            extra = {'aliases': [record['shortname']] if record.get('shortname') else [], 'website': record.get('url')}
+        elif source == 'vectorlogozone' and len(parts) == 5 and parts[:3] == ['src', 'content', 'logos']:
+            brand, variant = parts[3], Path(path).stem
+            extra = {'rights_note': 'AGPL-3.0 covers the website code; logos remain their owners\' property. Upstream places its modifications in the public domain. See the upstream README.'}
+        elif source == 'devicon' and len(parts) == 3 and parts[0] == 'icons':
+            brand, variant = parts[1], Path(path).stem
+            extra = {'aliases': metadata.get(brand.casefold(), {}).get('altnames', [])}
+        elif source in ('selfhst', 'dashboard-icons') and len(parts) == 2 and parts[0] in ('svg', 'png'):
+            stem = Path(path).stem
+            reference = re.sub(r'-(dark|light)$', '', stem)
+            brand = metadata.get(reference.casefold(), {}).get('Name') or reference
+            variant = stem + ('-png' if extension == '.png' else '')
+            extra = {'aliases': [reference]}
+            if source == 'selfhst':
+                extra['attribution'] = 'selfh.st Icons contributors — https://github.com/selfhst/icons (CC-BY-4.0 collection; brand rights remain separate)'
+        elif source == 'crypto' and len(parts) == 3 and parts[0] == 'svg' and parts[1] in ('black', 'color', 'icon', 'white'):
+            symbol = Path(path).stem
+            brand = metadata.get(symbol.casefold(), {}).get('name') or symbol
+            variant = parts[1]
+            extra = {'aliases': [symbol], 'symbol': symbol}
         else:
             continue
-        rows.append(row(source, brand, variant, f'https://raw.githubusercontent.com/{repo}/{revision}/{path}',
+        if source in ('lobe', 'simple-icons', 'thesvg'):
+            extra['library_license'] = license_id
+        rows.append(row(source, brand, variant, raw_base + urllib.parse.quote(path, safe='/'),
             repository=f'https://github.com/{repo}', revision=revision,
-            library_license='CC0-1.0' if source == 'simple-icons' else 'MIT',
-            usage_status='check-brand-guidelines'))
+            repository_license=license_id, license_url=raw_base + license_file, format=extension[1:],
+            usage_status='check-brand-guidelines', **extra))
     return rows, {'checked_at': checked, 'cached': cached, 'revision': revision}
 
 def rank(item, query):
@@ -146,7 +204,7 @@ def search(args):
     if not query:
         raise ValueError('Search needs at least one letter or digit')
     found, reports, errors = [], {}, {}
-    with concurrent.futures.ThreadPoolExecutor(max_workers=len(selected)) as pool:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=min(6, len(selected))) as pool:
         pending = {pool.submit(source_rows, source, args): source for source in selected}
         for future in concurrent.futures.as_completed(pending):
             source = pending[future]
@@ -168,6 +226,10 @@ def search(args):
             print(f"[{item['source']}] {item['brand']} / {item['variant']}\n  {item['url']}")
             if item.get('usage'):
                 print(f"  Usage: {item['usage']['status']} — {item['usage']['note']}")
+            if item.get('attribution'):
+                print(f"  Attribution: {item['attribution']}")
+            if item.get('rights_note'):
+                print(f"  Rights: {item['rights_note']}")
         for source, error in errors.items():
             print(f'Warning: {source}: {error}', file=sys.stderr)
         if not found:

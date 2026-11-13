@@ -7,7 +7,7 @@
 Find existing brand artwork, choose a supplied variant, and save it to your project with its source attached.
 
 [![Validate collection](https://github.com/lxf82dev/open-brand-assets/actions/workflows/check.yml/badge.svg)](https://github.com/lxf82dev/open-brand-assets/actions/workflows/check.yml)
-[![Sources: 5](https://img.shields.io/badge/collections-5-7c3aed)](#five-collections-one-lookup)
+[![Sources: 11](https://img.shields.io/badge/collections-11-7c3aed)](#eleven-collections-one-lookup)
 [![Python: 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776ab)](#use-the-cli)
 [![Code: MIT](https://img.shields.io/badge/code-MIT-16a34a)](LICENSE)
 
@@ -17,9 +17,9 @@ Find existing brand artwork, choose a supplied variant, and save it to your proj
 
 Your agent is building an integration grid, a provider picker, a landing page, or a slide. It needs the right logos. Finding files, checking variants, and retracing their sources can take more context than the UI itself.
 
-**Open Brand Assets gives the agent a repeatable lookup and retrieval workflow.** Python searches our collection and four established open-source catalogs. The model reads matching results; image bytes are saved to disk. Each file in our collection has a source URL, date, variant, usage note, and SHA-256.
+**Open Brand Assets gives the agent a repeatable lookup and retrieval workflow.** Python searches our collection and ten established open-source catalogs. The model reads matching results; image bytes are saved to disk. Each file in our collection has a source URL, date, variant, usage note, and SHA-256.
 
-![Context-text comparison: 4,050 tokens without the skill through page reading; 1,675 with the skill through targeted lookups, including instructions. A 58.6% reduction in this example.](docs/token-comparison.svg)
+![Context-text comparison: 4,050 tokens without the skill through page reading; 1,770 with the skill through targeted lookups, including instructions. A 56.3% reduction in this example.](docs/token-comparison.svg)
 
 *Measured three-logo example, including skill instructions. [See the breakdown and limits](#token-comparison).*
 
@@ -41,7 +41,7 @@ The [skill](skills/find-brand-logo/SKILL.md) is self-contained. It reads our pub
 
 | What the agent needs | What this project provides |
 | --- | --- |
-| A real asset for a named company or product | Search across five existing collections, with aliases in our catalog. |
+| A real asset for a named company or product | Search across eleven existing collections, with aliases in our catalog. |
 | A small amount of relevant context | Filter catalogs in Python and return a limited set of matches. |
 | A file ready to place in a project | Retrieve an exact local-catalog variant; verify its hash and format. |
 | Enough context to choose correctly | Named variants, light/dark hints where supplied, source dates, and available guideline links. |
@@ -52,7 +52,7 @@ The [skill](skills/find-brand-logo/SKILL.md) is self-contained. It reads our pub
 
 1. **Know the brand and variant? Fetch directly.** No discovery round trip is needed.
 2. **Know we carry the brand? Use `--source ours --limit 1`.** Widen the result limit when you need more variants.
-3. **Need broader coverage? Search all five with `--limit 1`.** The limit is per source, so this returns at most five matches.
+3. **Need broader coverage? Search all eleven with `--limit 1`.** The limit is per source, so this returns at most eleven matches.
 4. **Use plain-text output for a quick shortlist.** Add `--json` when you need structured metadata and source-status details.
 5. **Write image bytes to a file.** Keep SVG markup, base64 images, and whole catalog dumps out of the model's context.
 
@@ -65,18 +65,18 @@ Public catalogs are cached for 24 hours. That avoids repeated network downloads;
 | Counted text | Without skill: read brand pages | With skill: targeted lookups |
 | --- | ---: | ---: |
 | Readable official-page text + unique asset URLs | 3,399 | — |
-| Complete skill instructions, loaded once | — | 811 |
+| Complete skill instructions, loaded once | — | 906 |
 | Three plain-text lookups, one match each | — | 213 |
 | Same three source/hash/usage receipts | 651 | 651 |
-| **Total context-text tokens** | **4,050** | **1,675** |
+| **Total context-text tokens** | **4,050** | **1,770** |
 
-**2,375 fewer context-text tokens (58.6%) in this example.** Counted on 2026-11-13 with `tiktoken==0.12.0`, `o200k_base`. The baseline excludes raw HTML, scripts, navigation, and SVG contents. Image bytes stay on disk in both scenarios.
+**2,280 fewer context-text tokens (56.3%) in this example.** Counted on 2026-11-13 with `tiktoken==0.12.0`, `o200k_base`. The baseline excludes raw HTML, scripts, navigation, and SVG contents. Image bytes stay on disk in both scenarios.
 
 This is a controlled text-payload comparison, **not an end-to-end agent run or billing benchmark**. It excludes reasoning/output, message envelopes, installation, visual inspection, and any additional policy review. A precise page extraction or custom script can match or beat this result. Different brands, tokenizers, broader searches, and full JSON outputs change the counts; official pages can change too.
 
 See the [measurement and source hashes](research/token-benchmark.json) and [methodology](research/TOKEN_BENCHMARK.md), or [run the measurement script](scripts/benchmark_tokens.py). The claim is that filtering can keep context small; it is not a claim of the lowest possible token use for every agent.
 
-## Five collections, one lookup
+## Eleven collections, one lookup
 
 | Collection | What it brings |
 | --- | --- |
@@ -85,10 +85,20 @@ See the [measurement and source hashes](research/token-benchmark.json) and [meth
 | **[Lobe Icons](https://github.com/lobehub/lobe-icons)** | AI model, provider, and application artwork. |
 | **[Simple Icons](https://github.com/simple-icons/simple-icons)** | Monochrome icons across a broad range of brands. |
 | **[theSVG](https://github.com/glincker/thesvg)** | Brand and cloud-service artwork with multiple variants. |
+| **[Gilbarbara Logos](https://github.com/gilbarbara/logos)** | Optimized developer and DevOps logos, including named variants and shortname aliases. |
+| **[Vector Logo Zone](https://github.com/VectorLogoZone/vectorlogozone)** | Standardized brand icons, tiles, and horizontal marks. |
+| **[Devicon](https://github.com/devicons/devicon)** | Programming languages and developer/design tools, including alternate names. |
+| **[selfh.st Icons](https://github.com/selfhst/icons)** | Self-hosted application and service logos, with collection attribution retained. |
+| **[Dashboard Icons](https://github.com/homarr-labs/dashboard-icons)** | Dashboard and homelab service artwork, including PNG-only assets. |
+| **[Cryptocurrency Icons](https://github.com/spothq/cryptocurrency-icons)** | Currency names and symbols, such as Bitcoin/BTC, in four supplied styles. |
 
 These communities built the breadth. We add a shared agent workflow, a complementary collection, and source records for our files. The adapters link to their assets without mirroring their collections. See [upstream credits and contributors](#credits-to-the-people-building-the-commons).
 
 Source failures stay visible instead of being treated as zero matches. JSON output includes lookup time, cache status, match counts, and source errors. GitHub upstream asset URLs are pinned to the retrieved commit; GitHub's public API rate limits can apply. Names can collide, so confirm the company or product behind a match.
+
+Use `--source` to target a collection: `ours`, `svgl`, `lobe`, `simple-icons`, `thesvg`, `gilbarbara`, `vectorlogozone`, `devicon`, `selfhst`, `dashboard-icons`, or `crypto`. selfh.st and Dashboard Icons prefer SVG and include PNG when a matching SVG is unavailable. Required selfh.st attribution and Vector Logo Zone rights notes appear in plain text as well as JSON. Repository licenses describe the projects; individual brand rights remain separate.
+
+See the [additional-source research](research/ADDITIONAL_SOURCES.md) for the integration decisions and verified examples. Coverage overlaps across collections; their asset counts are not a count of unique brands.
 
 ## Use the CLI
 
@@ -102,11 +112,15 @@ python3 logos.py fetch openrouter --variant glyph-ink --output ./public/logos/op
 # Small shortlist from our catalog.
 python3 logos.py search "HeyGen" --source ours --limit 1
 
-# Broaden to all five collections: at most one match per source.
+# Broaden to all eleven collections: at most one match per source.
 python3 logos.py search "Claude" --limit 1
 
 # Full metadata when you need it.
 python3 logos.py search "OpenRouter" --limit 1 --json
+
+# Target specialized coverage and aliases.
+python3 logos.py search "arm64" --source devicon --limit 1
+python3 logos.py search "Bitcoin" --source crypto --limit 1
 
 # Full-checkout use without network access.
 python3 logos.py search "LibTV" --offline --limit 1
@@ -135,7 +149,7 @@ https://raw.githubusercontent.com/lxf82dev/open-brand-assets/<commit>/brands/ope
 | [Stitchable](brands/stitchable/) | Owner-supplied color and mono glyphs, SVG | [Stitchable](https://stitchable.ai/) |
 | [EditableFrames](brands/editableframes/) | Owner-supplied app icon, SVG | [EditableFrames](https://editableframes.stitchable.ai/) |
 
-Six brands had no matching brand paths in our [upstream coverage snapshot](research/upstream-coverage.json): HeyGen, Higgsfield, Runware, LibTV, Stitchable, and EditableFrames. This is a dated filename/alias check, not an exhaustive absence claim. BFL and OpenRouter already have upstream coverage; our entries provide official downloads and dated source records.
+Six brands had no matching brand paths in the original four upstream catalogs recorded in our [upstream coverage snapshot](research/upstream-coverage.json): HeyGen, Higgsfield, Runware, LibTV, Stitchable, and EditableFrames. This is a dated filename/alias check, not an exhaustive absence claim. BFL and OpenRouter already have upstream coverage; our entries provide official downloads and dated source records.
 
 Files are preserved byte-for-byte. HeyGen's three official symbol SVGs embed PNG artwork and are labelled accordingly. Website icons are labelled `site-icon`. Source dates record collection or checking, not a guarantee that a vendor has kept the same identity since.
 
@@ -149,6 +163,12 @@ Thank you to the maintainers and contributors who collect, verify, update, and s
 | [Lobe Icons](https://github.com/lobehub/lobe-icons) | [LobeHub](https://github.com/lobehub) and [Lobe Icons contributors](https://github.com/lobehub/lobe-icons/graphs/contributors) | AI-brand coverage and static SVG variants. |
 | [Simple Icons](https://github.com/simple-icons/simple-icons) | The [Simple Icons community](https://github.com/simple-icons) and [its contributors](https://github.com/simple-icons/simple-icons/graphs/contributors) | Monochrome brand coverage, source metadata, and contribution practices. |
 | [theSVG](https://github.com/glincker/thesvg) | [glincker](https://github.com/glincker) and [theSVG contributors](https://github.com/glincker/thesvg/graphs/contributors) | Broad brand/cloud coverage and variant discovery. |
+| [Gilbarbara Logos](https://github.com/gilbarbara/logos) | [gilbarbara](https://github.com/gilbarbara) and [Logos contributors](https://github.com/gilbarbara/logos/graphs/contributors) | Optimized artwork and brand/variant metadata. |
+| [Vector Logo Zone](https://github.com/VectorLogoZone/vectorlogozone) | [VectorLogoZone](https://github.com/VectorLogoZone) and [its contributors](https://github.com/VectorLogoZone/vectorlogozone/graphs/contributors) | Consistent layouts and official-source records. |
+| [Devicon](https://github.com/devicons/devicon) | The [Devicons community](https://github.com/devicons) and [Devicon contributors](https://github.com/devicons/devicon/graphs/contributors) | Developer-tool artwork and alternative names. |
+| [selfh.st Icons](https://github.com/selfhst/icons) | [selfh.st](https://selfh.st/) and [Icons contributors](https://github.com/selfhst/icons/graphs/contributors) | Self-hosted application coverage; collection attribution under CC-BY-4.0. |
+| [Dashboard Icons](https://github.com/homarr-labs/dashboard-icons) | [Homarr Labs](https://github.com/homarr-labs) and [Dashboard Icons contributors](https://github.com/homarr-labs/dashboard-icons/graphs/contributors) | Dashboard and homelab application artwork. |
+| [Cryptocurrency Icons](https://github.com/spothq/cryptocurrency-icons) | [Spot](https://github.com/spothq), original creator [Christopher Downer](https://github.com/cjdowner), and [contributors](https://github.com/spothq/cryptocurrency-icons/graphs/contributors) | Currency artwork, symbols, and name metadata. |
 | [Skills CLI](https://github.com/vercel-labs/skills) | [Vercel Labs](https://github.com/vercel-labs) and [Skills contributors](https://github.com/vercel-labs/skills/graphs/contributors) | Installation and discovery of the reusable agent skill. |
 | [tiktoken](https://github.com/openai/tiktoken) | [OpenAI](https://github.com/openai) and [tiktoken contributors](https://github.com/openai/tiktoken/graphs/contributors) | Token counting for the optional, reproducible comparison. |
 

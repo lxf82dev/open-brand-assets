@@ -1,5 +1,5 @@
 {
-  "measured_at": "2026-11-13T05:36:47+00:00",
+  "measured_at": "2026-11-13T05:54:21+00:00",
   "kind": "controlled-context-payload-comparison-not-agent-billing",
   "task": "Retrieve one supplied logo variant each for HeyGen, Black Forest Labs, and OpenRouter, retaining source/hash receipts.",
   "tokenizer": {
@@ -7,13 +7,15 @@
     "version": "0.12.0",
     "encoding": "o200k_base"
   },
-  "root_commit": "4d7b9cb142c7def8099429cef345209ae10f7640",
+  "root_commit": "952d732ddf6798ef389d3edf1113dc1ccbaf597d",
+  "working_tree_dirty": true,
+  "cli_sha256": "923b885450c9e787cce023be19bfc63e633ed3987447d2703cc3a353f8cd9a5b",
   "inputs": {
     "pages": [
       {
         "brand": "heygen",
         "url": "https://www.heygen.com/brand-kit",
-        "html_sha256": "6185572226a7996c726c6eaf64e88c540659f78414694175a18b39fd16b9892f",
+        "html_sha256": "7b84506b671d1431c97f1e1dec4be11681bc0ed6f82adf40178ffe43521333b1",
         "counted_text_sha256": "ace35580c81c861c480837726804bc532c39734761a2b33384e67fa6f46b5e31",
         "tokens": 1843,
         "characters": 7011,
@@ -31,7 +33,7 @@
       {
         "brand": "openrouter",
         "url": "https://openrouter.ai/brand",
-        "html_sha256": "33f7a37170e74242111cd30dc4d1575e1237ab524f2362894b9c1ace6b9469b4",
+        "html_sha256": "88733f5481cfa162b6a02393c2181f41ffb5bb9a3b249186fee1ee811ded315c",
         "counted_text_sha256": "05512531a5c01cd553bd5636322ac5803e32c75c1027f1b79cafd5282a9c8fa9",
         "tokens": 745,
         "characters": 2783,
@@ -109,15 +111,15 @@
       }
     ],
     "skill_instructions": {
-      "tokens": 811,
-      "sha256": "db1ca1a5a95a38b7dddab389bf90180686469517536acc7d0b43e1200a262476"
+      "tokens": 906,
+      "sha256": "4f2496c411aa3e9386178676d2151c6597265dcddee74cd57864eae549f0bc1c"
     }
   },
   "totals": {
     "without_skill_page_reading": 4050,
-    "with_skill_targeted_lookup": 1675,
-    "difference": 2375,
-    "reduction_percent": 58.6
+    "with_skill_targeted_lookup": 1770,
+    "difference": 2280,
+    "reduction_percent": 56.3
   },
   "method": [
     "Baseline: official page main/body text plus deduplicated SVG/PNG/ZIP URLs; excludes scripts, styles, SVG markup, navigation, header, footer, and raw HTML.",

@@ -1,0 +1,109 @@
+{
+  "checked": "2026-11-13",
+  "method": "Actual upstream tree paths and commit-matched metadata, with a real lookup, image-content check, and license-file download for every adapter.",
+  "counts_note": "Indexed files include variants and overlapping brands; not unique brand counts.",
+  "integrations": [
+    {
+      "source": "gilbarbara",
+      "query": "Higgsfield",
+      "indexed_assets": 2070,
+      "matches": 2,
+      "revision": "b9edc65f8946027cb5e2fe6c772e914cf3649fba",
+      "brand": "Higgsfield",
+      "variant": "higgsfield",
+      "url": "https://raw.githubusercontent.com/gilbarbara/logos/b9edc65f8946027cb5e2fe6c772e914cf3649fba/logos/higgsfield.svg",
+      "license_url": "https://raw.githubusercontent.com/gilbarbara/logos/b9edc65f8946027cb5e2fe6c772e914cf3649fba/LICENSE.txt",
+      "format": "svg",
+      "asset_bytes_verified": 2376,
+      "repository": "https://github.com/gilbarbara/logos",
+      "branch": "main",
+      "repository_license": "CC0-1.0"
+    },
+    {
+      "source": "vectorlogozone",
+      "query": "github",
+      "indexed_assets": 3844,
+      "matches": 12,
+      "revision": "7442420d3dc3ae97476fc57a64edfbfd7be95e24",
+      "brand": "github",
+      "variant": "github-ar21",
+      "url": "https://raw.githubusercontent.com/VectorLogoZone/vectorlogozone/7442420d3dc3ae97476fc57a64edfbfd7be95e24/src/content/logos/github/github-ar21.svg",
+      "license_url": "https://raw.githubusercontent.com/VectorLogoZone/vectorlogozone/7442420d3dc3ae97476fc57a64edfbfd7be95e24/LICENSE.txt",
+      "format": "svg",
+      "asset_bytes_verified": 7805,
+      "repository": "https://github.com/VectorLogoZone/vectorlogozone",
+      "branch": "main",
+      "repository_license": "AGPL-3.0"
+    },
+    {
+      "source": "devicon",
+      "query": "arm64",
+      "indexed_assets": 2120,
+      "matches": 3,
+      "revision": "32fe1d3b3f36ad11f90ab94f7db59738139c2bf6",
+      "brand": "aarch64",
+      "variant": "aarch64-line",
+      "url": "https://raw.githubusercontent.com/devicons/devicon/32fe1d3b3f36ad11f90ab94f7db59738139c2bf6/icons/aarch64/aarch64-line.svg",
+      "license_url": "https://raw.githubusercontent.com/devicons/devicon/32fe1d3b3f36ad11f90ab94f7db59738139c2bf6/LICENSE",
+      "format": "svg",
+      "asset_bytes_verified": 9130,
+      "repository": "https://github.com/devicons/devicon",
+      "branch": "master",
+      "repository_license": "MIT"
+    },
+    {
+      "source": "selfhst",
+      "query": "Nextcloud",
+      "indexed_assets": 7861,
+      "matches": 54,
+      "revision": "2102cc3ccf73394541eab751c1bc8f35deb79e06",
+      "brand": "Nextcloud",
+      "variant": "nextcloud",
+      "url": "https://raw.githubusercontent.com/selfhst/icons/2102cc3ccf73394541eab751c1bc8f35deb79e06/svg/nextcloud.svg",
+      "license_url": "https://raw.githubusercontent.com/selfhst/icons/2102cc3ccf73394541eab751c1bc8f35deb79e06/LICENSE",
+      "format": "svg",
+      "asset_bytes_verified": 860,
+      "repository": "https://github.com/selfhst/icons",
+      "branch": "main",
+      "repository_license": "CC-BY-4.0"
+    },
+    {
+      "source": "dashboard-icons",
+      "query": "Nextcloud",
+      "indexed_assets": 4863,
+      "matches": 19,
+      "revision": "d767d7327db7f8ebd3715b552523f61889eea41c",
+      "brand": "nextcloud",
+      "variant": "nextcloud",
+      "url": "https://raw.githubusercontent.com/homarr-labs/dashboard-icons/d767d7327db7f8ebd3715b552523f61889eea41c/svg/nextcloud.svg",
+      "license_url": "https://raw.githubusercontent.com/homarr-labs/dashboard-icons/d767d7327db7f8ebd3715b552523f61889eea41c/LICENSE",
+      "format": "svg",
+      "asset_bytes_verified": 739,
+      "repository": "https://github.com/homarr-labs/dashboard-icons",
+      "branch": "main",
+      "repository_license": "Apache-2.0"
+    },
+    {
+      "source": "crypto",
+      "query": "Bitcoin",
+      "indexed_assets": 1932,
+      "matches": 52,
+      "revision": "1a63530be6e374711a8554f31b17e4cb92c25fa5",
+      "brand": "Bitcoin",
+      "variant": "black",
+      "url": "https://raw.githubusercontent.com/spothq/cryptocurrency-icons/1a63530be6e374711a8554f31b17e4cb92c25fa5/svg/black/btc.svg",
+      "license_url": "https://raw.githubusercontent.com/spothq/cryptocurrency-icons/1a63530be6e374711a8554f31b17e4cb92c25fa5/LICENSE.md",
+      "format": "svg",
+      "asset_bytes_verified": 927,
+      "repository": "https://github.com/spothq/cryptocurrency-icons",
+      "branch": "master",
+      "repository_license": "CC0-1.0"
+    }
+  ],
+  "deferred": [
+    {
+      "repository": "https://github.com/benc-uk/icon-collection",
+      "reason": "Mixed asset sources, use-specific conditions, archive/resource symbols, and no single detected root license; retain as a manual architecture-diagram resource."
+    }
+  ]
+}
