@@ -1,0 +1,55 @@
+{
+  "id": "higgsfield",
+  "name": "Higgsfield",
+  "website": "https://higgsfield.ai",
+  "aliases": [],
+  "categories": [
+    "AI"
+  ],
+  "usage": {
+    "status": "unverified",
+    "guidelines": "https://higgsfield.ai/terms-of-use-agreement",
+    "note": "Official website icons. Terms prohibit implying endorsement, sponsorship, or affiliation without consent. No blanket use or redistribution grant has been verified.",
+    "checked": "2026-11-13"
+  },
+  "assets": [
+    {
+      "id": "site-icon",
+      "file": "brands/higgsfield/site-icon.png",
+      "format": "png",
+      "role": "site-icon",
+      "theme": "any",
+      "sha256": "77edee005ae63f7881f930b815392b6cfa607f960ffb419d1c9df52e37fd50c1",
+      "source": {
+        "kind": "official-website",
+        "page": "https://higgsfield.ai/",
+        "url": "https://higgsfield.ai/icon.png",
+        "retrieved": "2026-11-13",
+        "modifications": "none"
+      },
+      "rights": {
+        "license": "LicenseRef-Brand-Owner",
+        "note": "The project MIT license does not grant rights to this brand asset."
+      }
+    },
+    {
+      "id": "touch-icon",
+      "file": "brands/higgsfield/touch-icon.png",
+      "format": "png",
+      "role": "site-icon",
+      "theme": "any",
+      "sha256": "47f5136c65f9dd2360c59d2b65d06d9e7289230aa4edd7b150f28e6f0582bf1c",
+      "source": {
+        "kind": "official-website",
+        "page": "https://higgsfield.ai/",
+        "url": "https://higgsfield.ai/apple-icon.png",
+        "retrieved": "2026-11-13",
+        "modifications": "none"
+      },
+      "rights": {
+        "license": "LicenseRef-Brand-Owner",
+        "note": "The project MIT license does not grant rights to this brand asset."
+      }
+    }
+  ]
+}

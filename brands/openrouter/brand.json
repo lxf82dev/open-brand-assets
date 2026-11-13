@@ -1,0 +1,247 @@
+{
+  "id": "openrouter",
+  "name": "OpenRouter",
+  "website": "https://openrouter.ai",
+  "aliases": [
+    "open router"
+  ],
+  "categories": [
+    "AI"
+  ],
+  "usage": {
+    "status": "guidelines-available",
+    "guidelines": "https://openrouter.ai/brand",
+    "note": "Official brand downloads. Do not stretch, recolor, or remix marks. Use the supplied colorway for the intended background.",
+    "checked": "2026-11-13"
+  },
+  "assets": [
+    {
+      "id": "glyph-cloud",
+      "file": "brands/openrouter/glyph-cloud.svg",
+      "format": "svg",
+      "role": "symbol",
+      "theme": "dark",
+      "sha256": "385bbf00cd5718ad652fdfc05b4b4e7d0ea3a834cfd807e1133d3bee2b9a7c81",
+      "source": {
+        "kind": "official-brand-kit",
+        "page": "https://openrouter.ai/brand",
+        "url": "https://openrouter.ai/brand/logos/transparent/glyph/svg/glyph-cloud.svg",
+        "retrieved": "2026-11-13",
+        "modifications": "none"
+      },
+      "rights": {
+        "license": "LicenseRef-Brand-Owner",
+        "note": "The project MIT license does not grant rights to this brand asset."
+      }
+    },
+    {
+      "id": "glyph-grape",
+      "file": "brands/openrouter/glyph-grape.svg",
+      "format": "svg",
+      "role": "symbol",
+      "theme": "light",
+      "sha256": "5b49593d44e6aa41011be377e182cd89e57473f1948e0dfb128f99a92adfc68d",
+      "source": {
+        "kind": "official-brand-kit",
+        "page": "https://openrouter.ai/brand",
+        "url": "https://openrouter.ai/brand/logos/transparent/glyph/svg/glyph-grape.svg",
+        "retrieved": "2026-11-13",
+        "modifications": "none"
+      },
+      "rights": {
+        "license": "LicenseRef-Brand-Owner",
+        "note": "The project MIT license does not grant rights to this brand asset."
+      }
+    },
+    {
+      "id": "glyph-ink",
+      "file": "brands/openrouter/glyph-ink.svg",
+      "format": "svg",
+      "role": "symbol",
+      "theme": "light",
+      "sha256": "91be6b8a91745f089bfe42b89a5cbcd4b666fca6473610f9a6c11a31bd7523bc",
+      "source": {
+        "kind": "official-brand-kit",
+        "page": "https://openrouter.ai/brand",
+        "url": "https://openrouter.ai/brand/logos/transparent/glyph/svg/glyph-ink.svg",
+        "retrieved": "2026-11-13",
+        "modifications": "none"
+      },
+      "rights": {
+        "license": "LicenseRef-Brand-Owner",
+        "note": "The project MIT license does not grant rights to this brand asset."
+      }
+    },
+    {
+      "id": "glyph-volt",
+      "file": "brands/openrouter/glyph-volt.svg",
+      "format": "svg",
+      "role": "symbol",
+      "theme": "dark",
+      "sha256": "0d22462e4f2835a5a5b9000af0a55fc9238e39996100f54706e41ec45b9d1727",
+      "source": {
+        "kind": "official-brand-kit",
+        "page": "https://openrouter.ai/brand",
+        "url": "https://openrouter.ai/brand/logos/transparent/glyph/svg/glyph-volt.svg",
+        "retrieved": "2026-11-13",
+        "modifications": "none"
+      },
+      "rights": {
+        "license": "LicenseRef-Brand-Owner",
+        "note": "The project MIT license does not grant rights to this brand asset."
+      }
+    },
+    {
+      "id": "horizontal-cloud",
+      "file": "brands/openrouter/horizontal-cloud.svg",
+      "format": "svg",
+      "role": "lockup",
+      "theme": "dark",
+      "sha256": "29a7ab5a1b5beaff491eb616a49d71d7e7efa84722c2e3865d868bacff1dea23",
+      "source": {
+        "kind": "official-brand-kit",
+        "page": "https://openrouter.ai/brand",
+        "url": "https://openrouter.ai/brand/logos/transparent/horizontal/svg/horizontal-cloud.svg",
+        "retrieved": "2026-11-13",
+        "modifications": "none"
+      },
+      "rights": {
+        "license": "LicenseRef-Brand-Owner",
+        "note": "The project MIT license does not grant rights to this brand asset."
+      }
+    },
+    {
+      "id": "horizontal-grape",
+      "file": "brands/openrouter/horizontal-grape.svg",
+      "format": "svg",
+      "role": "lockup",
+      "theme": "light",
+      "sha256": "52ebce48bc80a336d6944fc11308493cdde298acacc9844d68947c574a4d14cb",
+      "source": {
+        "kind": "official-brand-kit",
+        "page": "https://openrouter.ai/brand",
+        "url": "https://openrouter.ai/brand/logos/transparent/horizontal/svg/horizontal-grape.svg",
+        "retrieved": "2026-11-13",
+        "modifications": "none"
+      },
+      "rights": {
+        "license": "LicenseRef-Brand-Owner",
+        "note": "The project MIT license does not grant rights to this brand asset."
+      }
+    },
+    {
+      "id": "horizontal-ink",
+      "file": "brands/openrouter/horizontal-ink.svg",
+      "format": "svg",
+      "role": "lockup",
+      "theme": "light",
+      "sha256": "dfd914ef54fc38a16bed233ca43a0927feb0267949b5f7c099966984d7740db4",
+      "source": {
+        "kind": "official-brand-kit",
+        "page": "https://openrouter.ai/brand",
+        "url": "https://openrouter.ai/brand/logos/transparent/horizontal/svg/horizontal-ink.svg",
+        "retrieved": "2026-11-13",
+        "modifications": "none"
+      },
+      "rights": {
+        "license": "LicenseRef-Brand-Owner",
+        "note": "The project MIT license does not grant rights to this brand asset."
+      }
+    },
+    {
+      "id": "horizontal-volt",
+      "file": "brands/openrouter/horizontal-volt.svg",
+      "format": "svg",
+      "role": "lockup",
+      "theme": "dark",
+      "sha256": "3f3e72a1732d4df7eb584e7e8e98a1f2f701513502d27c492a2d715ca491e4ab",
+      "source": {
+        "kind": "official-brand-kit",
+        "page": "https://openrouter.ai/brand",
+        "url": "https://openrouter.ai/brand/logos/transparent/horizontal/svg/horizontal-volt.svg",
+        "retrieved": "2026-11-13",
+        "modifications": "none"
+      },
+      "rights": {
+        "license": "LicenseRef-Brand-Owner",
+        "note": "The project MIT license does not grant rights to this brand asset."
+      }
+    },
+    {
+      "id": "vertical-cloud",
+      "file": "brands/openrouter/vertical-cloud.svg",
+      "format": "svg",
+      "role": "lockup",
+      "theme": "dark",
+      "sha256": "f6d03a6fd750040f400119a475866380168c7e7b39eb426f4007b90323306566",
+      "source": {
+        "kind": "official-brand-kit",
+        "page": "https://openrouter.ai/brand",
+        "url": "https://openrouter.ai/brand/logos/transparent/vertical/svg/vertical-cloud.svg",
+        "retrieved": "2026-11-13",
+        "modifications": "none"
+      },
+      "rights": {
+        "license": "LicenseRef-Brand-Owner",
+        "note": "The project MIT license does not grant rights to this brand asset."
+      }
+    },
+    {
+      "id": "vertical-grape",
+      "file": "brands/openrouter/vertical-grape.svg",
+      "format": "svg",
+      "role": "lockup",
+      "theme": "light",
+      "sha256": "a54db111460e7ed2e236e4b2bfec83fb12cb9c517fc8e662c9e286dde9385abb",
+      "source": {
+        "kind": "official-brand-kit",
+        "page": "https://openrouter.ai/brand",
+        "url": "https://openrouter.ai/brand/logos/transparent/vertical/svg/vertical-grape.svg",
+        "retrieved": "2026-11-13",
+        "modifications": "none"
+      },
+      "rights": {
+        "license": "LicenseRef-Brand-Owner",
+        "note": "The project MIT license does not grant rights to this brand asset."
+      }
+    },
+    {
+      "id": "vertical-ink",
+      "file": "brands/openrouter/vertical-ink.svg",
+      "format": "svg",
+      "role": "lockup",
+      "theme": "light",
+      "sha256": "980ae0cffcf4de333430c77d997ccb3b6d8687b89ac9031eb4a460aab411edac",
+      "source": {
+        "kind": "official-brand-kit",
+        "page": "https://openrouter.ai/brand",
+        "url": "https://openrouter.ai/brand/logos/transparent/vertical/svg/vertical-ink.svg",
+        "retrieved": "2026-11-13",
+        "modifications": "none"
+      },
+      "rights": {
+        "license": "LicenseRef-Brand-Owner",
+        "note": "The project MIT license does not grant rights to this brand asset."
+      }
+    },
+    {
+      "id": "vertical-volt",
+      "file": "brands/openrouter/vertical-volt.svg",
+      "format": "svg",
+      "role": "lockup",
+      "theme": "dark",
+      "sha256": "5047cdd5bbbb34865b6ed01b5acea90422b6e8a2cdecd633abc283eaca420ddc",
+      "source": {
+        "kind": "official-brand-kit",
+        "page": "https://openrouter.ai/brand",
+        "url": "https://openrouter.ai/brand/logos/transparent/vertical/svg/vertical-volt.svg",
+        "retrieved": "2026-11-13",
+        "modifications": "none"
+      },
+      "rights": {
+        "license": "LicenseRef-Brand-Owner",
+        "note": "The project MIT license does not grant rights to this brand asset."
+      }
+    }
+  ]
+}

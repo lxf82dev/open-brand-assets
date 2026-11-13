@@ -1,0 +1,38 @@
+{
+  "id": "editableframes",
+  "name": "EditableFrames",
+  "website": "https://editableframes.stitchable.ai",
+  "aliases": [
+    "editable frames"
+  ],
+  "categories": [
+    "Design"
+  ],
+  "usage": {
+    "status": "owner-supplied",
+    "guidelines": null,
+    "note": "Supplied from the owner-authorized Stitchable site workspace. Brand rights remain with their owner; no separate public trademark license is granted.",
+    "checked": "2026-11-13"
+  },
+  "assets": [
+    {
+      "id": "app-icon",
+      "file": "brands/editableframes/app-icon.svg",
+      "format": "svg",
+      "role": "app-icon",
+      "theme": "any",
+      "sha256": "d39fd5deb761d2a7fc98156aa4fed38bc74f5458b704af0a67a24044f1b57d2a",
+      "source": {
+        "kind": "owner-supplied",
+        "page": "https://stitchable.ai/",
+        "url": "https://stitchable.ai/editableframes-icon.svg",
+        "retrieved": "2026-11-13",
+        "modifications": "none"
+      },
+      "rights": {
+        "license": "LicenseRef-Brand-Owner",
+        "note": "The project MIT license does not grant rights to this brand asset."
+      }
+    }
+  ]
+}

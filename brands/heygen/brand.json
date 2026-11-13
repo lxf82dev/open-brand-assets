@@ -1,0 +1,322 @@
+{
+  "id": "heygen",
+  "name": "HeyGen",
+  "website": "https://www.heygen.com",
+  "aliases": [
+    "hey gen"
+  ],
+  "categories": [
+    "AI"
+  ],
+  "usage": {
+    "status": "guidelines-available",
+    "guidelines": "https://www.heygen.com/brand-kit",
+    "note": "Official kit for content featuring or referencing HeyGen. Preserve assets, keep marks separate, and avoid implied endorsement. Consult the linked guidelines for the intended use.",
+    "checked": "2026-11-13"
+  },
+  "assets": [
+    {
+      "id": "heygen-full-black-color-logo",
+      "file": "brands/heygen/heygen-full-black-color-logo.svg",
+      "format": "svg",
+      "role": "lockup",
+      "theme": "light",
+      "sha256": "ca534b437ab07668374b0af934bd1b1370cc309eea7bc78a733baee8291c30a1",
+      "source": {
+        "kind": "official-brand-kit",
+        "page": "https://www.heygen.com/brand-kit",
+        "url": "https://dynamic.heygen.ai/Heygen%20Brand-kit/heygen-brandkit.zip",
+        "retrieved": "2026-11-13",
+        "modifications": "none",
+        "archive_member": "heygen-brandkit/heygen-full-black-color-logo.svg"
+      },
+      "rights": {
+        "license": "LicenseRef-Brand-Owner",
+        "note": "The project MIT license does not grant rights to this brand asset."
+      }
+    },
+    {
+      "id": "heygen-full-black-logo",
+      "file": "brands/heygen/heygen-full-black-logo.svg",
+      "format": "svg",
+      "role": "lockup",
+      "theme": "light",
+      "sha256": "4ec14e588879ab89bc74ca7d8d86857fa4b7b709661af6c10ad49008e6ffb4c3",
+      "source": {
+        "kind": "official-brand-kit",
+        "page": "https://www.heygen.com/brand-kit",
+        "url": "https://dynamic.heygen.ai/Heygen%20Brand-kit/heygen-brandkit.zip",
+        "retrieved": "2026-11-13",
+        "modifications": "none",
+        "archive_member": "heygen-brandkit/heygen-full-black-logo.svg"
+      },
+      "rights": {
+        "license": "LicenseRef-Brand-Owner",
+        "note": "The project MIT license does not grant rights to this brand asset."
+      }
+    },
+    {
+      "id": "heygen-full-white-color-logo",
+      "file": "brands/heygen/heygen-full-white-color-logo.svg",
+      "format": "svg",
+      "role": "lockup",
+      "theme": "dark",
+      "sha256": "bb34460e7dded3b0f2e627ae1f7b2caeac452580993b5dc02df40859c46f0fac",
+      "source": {
+        "kind": "official-brand-kit",
+        "page": "https://www.heygen.com/brand-kit",
+        "url": "https://dynamic.heygen.ai/Heygen%20Brand-kit/heygen-brandkit.zip",
+        "retrieved": "2026-11-13",
+        "modifications": "none",
+        "archive_member": "heygen-brandkit/heygen-full-white-color-logo.svg"
+      },
+      "rights": {
+        "license": "LicenseRef-Brand-Owner",
+        "note": "The project MIT license does not grant rights to this brand asset."
+      }
+    },
+    {
+      "id": "heygen-full-white-logo",
+      "file": "brands/heygen/heygen-full-white-logo.svg",
+      "format": "svg",
+      "role": "lockup",
+      "theme": "dark",
+      "sha256": "c091d02da26d571b1c12808a5b171bb2f7dbd66f998c6ab8c2079c7f3b0c2510",
+      "source": {
+        "kind": "official-brand-kit",
+        "page": "https://www.heygen.com/brand-kit",
+        "url": "https://dynamic.heygen.ai/Heygen%20Brand-kit/heygen-brandkit.zip",
+        "retrieved": "2026-11-13",
+        "modifications": "none",
+        "archive_member": "heygen-brandkit/heygen-full-white-logo.svg"
+      },
+      "rights": {
+        "license": "LicenseRef-Brand-Owner",
+        "note": "The project MIT license does not grant rights to this brand asset."
+      }
+    },
+    {
+      "id": "heygen-secondary-black-color-logo",
+      "file": "brands/heygen/heygen-secondary-black-color-logo.svg",
+      "format": "svg",
+      "role": "lockup",
+      "theme": "light",
+      "sha256": "627d72c01e4ab84eb567164666c0993177eae7b7a6025947408700058a51af32",
+      "source": {
+        "kind": "official-brand-kit",
+        "page": "https://www.heygen.com/brand-kit",
+        "url": "https://dynamic.heygen.ai/Heygen%20Brand-kit/heygen-brandkit.zip",
+        "retrieved": "2026-11-13",
+        "modifications": "none",
+        "archive_member": "heygen-brandkit/heygen-secondary-black-color-logo.svg"
+      },
+      "rights": {
+        "license": "LicenseRef-Brand-Owner",
+        "note": "The project MIT license does not grant rights to this brand asset."
+      }
+    },
+    {
+      "id": "heygen-secondary-black-logo",
+      "file": "brands/heygen/heygen-secondary-black-logo.svg",
+      "format": "svg",
+      "role": "lockup",
+      "theme": "light",
+      "sha256": "f89d39848e0a1be1083ec02c4d864b024728bc568c16f449a829f194434cd98a",
+      "source": {
+        "kind": "official-brand-kit",
+        "page": "https://www.heygen.com/brand-kit",
+        "url": "https://dynamic.heygen.ai/Heygen%20Brand-kit/heygen-brandkit.zip",
+        "retrieved": "2026-11-13",
+        "modifications": "none",
+        "archive_member": "heygen-brandkit/heygen-secondary-black-logo.svg"
+      },
+      "rights": {
+        "license": "LicenseRef-Brand-Owner",
+        "note": "The project MIT license does not grant rights to this brand asset."
+      }
+    },
+    {
+      "id": "heygen-secondary-white-color-logo",
+      "file": "brands/heygen/heygen-secondary-white-color-logo.svg",
+      "format": "svg",
+      "role": "lockup",
+      "theme": "dark",
+      "sha256": "9d604850f4cf1d71cb7553d9a5bc015246f51f193594b4ee5f215ba0c634fb88",
+      "source": {
+        "kind": "official-brand-kit",
+        "page": "https://www.heygen.com/brand-kit",
+        "url": "https://dynamic.heygen.ai/Heygen%20Brand-kit/heygen-brandkit.zip",
+        "retrieved": "2026-11-13",
+        "modifications": "none",
+        "archive_member": "heygen-brandkit/heygen-secondary-white-color-logo.svg"
+      },
+      "rights": {
+        "license": "LicenseRef-Brand-Owner",
+        "note": "The project MIT license does not grant rights to this brand asset."
+      }
+    },
+    {
+      "id": "heygen-secondary-white-logo",
+      "file": "brands/heygen/heygen-secondary-white-logo.svg",
+      "format": "svg",
+      "role": "lockup",
+      "theme": "dark",
+      "sha256": "d7c39b90b9c834fa76e329703ff1dec16fc51c10b6e41942cae541d74758c9ad",
+      "source": {
+        "kind": "official-brand-kit",
+        "page": "https://www.heygen.com/brand-kit",
+        "url": "https://dynamic.heygen.ai/Heygen%20Brand-kit/heygen-brandkit.zip",
+        "retrieved": "2026-11-13",
+        "modifications": "none",
+        "archive_member": "heygen-brandkit/heygen-secondary-white-logo.svg"
+      },
+      "rights": {
+        "license": "LicenseRef-Brand-Owner",
+        "note": "The project MIT license does not grant rights to this brand asset."
+      }
+    },
+    {
+      "id": "heygen-symbol-black-logo",
+      "file": "brands/heygen/heygen-symbol-black-logo.svg",
+      "format": "svg",
+      "role": "symbol",
+      "theme": "light",
+      "sha256": "eb64f05c43aaee1e947e540a83a98e54f738d4d5e2fd077906dbd33845d7b408",
+      "source": {
+        "kind": "official-brand-kit",
+        "page": "https://www.heygen.com/brand-kit",
+        "url": "https://dynamic.heygen.ai/Heygen%20Brand-kit/heygen-brandkit.zip",
+        "retrieved": "2026-11-13",
+        "modifications": "none",
+        "archive_member": "heygen-brandkit/heygen-symbol-black-logo.svg"
+      },
+      "rights": {
+        "license": "LicenseRef-Brand-Owner",
+        "note": "The project MIT license does not grant rights to this brand asset."
+      },
+      "note": "Official SVG container includes embedded PNG artwork; not fully vector."
+    },
+    {
+      "id": "heygen-symbol-blue-logo",
+      "file": "brands/heygen/heygen-symbol-blue-logo.svg",
+      "format": "svg",
+      "role": "symbol",
+      "theme": "any",
+      "sha256": "c175c31c412027fef5648677a23ee119a42fc8897bd00c28e3c98f122357c955",
+      "source": {
+        "kind": "official-brand-kit",
+        "page": "https://www.heygen.com/brand-kit",
+        "url": "https://dynamic.heygen.ai/Heygen%20Brand-kit/heygen-brandkit.zip",
+        "retrieved": "2026-11-13",
+        "modifications": "none",
+        "archive_member": "heygen-brandkit/heygen-symbol-blue-logo.svg"
+      },
+      "rights": {
+        "license": "LicenseRef-Brand-Owner",
+        "note": "The project MIT license does not grant rights to this brand asset."
+      },
+      "note": "Official SVG container includes embedded PNG artwork; not fully vector."
+    },
+    {
+      "id": "heygen-symbol-white-logo",
+      "file": "brands/heygen/heygen-symbol-white-logo.svg",
+      "format": "svg",
+      "role": "symbol",
+      "theme": "dark",
+      "sha256": "997142e32fea79b5b400d43b33b90fc4c093cab715914ff0e458627abc1cebd6",
+      "source": {
+        "kind": "official-brand-kit",
+        "page": "https://www.heygen.com/brand-kit",
+        "url": "https://dynamic.heygen.ai/Heygen%20Brand-kit/heygen-brandkit.zip",
+        "retrieved": "2026-11-13",
+        "modifications": "none",
+        "archive_member": "heygen-brandkit/heygen-symbol-white-logo.svg"
+      },
+      "rights": {
+        "license": "LicenseRef-Brand-Owner",
+        "note": "The project MIT license does not grant rights to this brand asset."
+      },
+      "note": "Official SVG container includes embedded PNG artwork; not fully vector."
+    },
+    {
+      "id": "heygen-tertiary-black-color-logo",
+      "file": "brands/heygen/heygen-tertiary-black-color-logo.svg",
+      "format": "svg",
+      "role": "lockup",
+      "theme": "light",
+      "sha256": "b6f4209a3bdffeba1b297e00b1b8ddca0762eb392ecfeb318898a4e7c887fca6",
+      "source": {
+        "kind": "official-brand-kit",
+        "page": "https://www.heygen.com/brand-kit",
+        "url": "https://dynamic.heygen.ai/Heygen%20Brand-kit/heygen-brandkit.zip",
+        "retrieved": "2026-11-13",
+        "modifications": "none",
+        "archive_member": "heygen-brandkit/heygen-tertiary-black-color-logo.svg"
+      },
+      "rights": {
+        "license": "LicenseRef-Brand-Owner",
+        "note": "The project MIT license does not grant rights to this brand asset."
+      }
+    },
+    {
+      "id": "heygen-tertiary-black-logo",
+      "file": "brands/heygen/heygen-tertiary-black-logo.svg",
+      "format": "svg",
+      "role": "lockup",
+      "theme": "light",
+      "sha256": "eef5845e9be359971c681ca38e64eace9e06dde7803227b5fb9a0a61b083a5fc",
+      "source": {
+        "kind": "official-brand-kit",
+        "page": "https://www.heygen.com/brand-kit",
+        "url": "https://dynamic.heygen.ai/Heygen%20Brand-kit/heygen-brandkit.zip",
+        "retrieved": "2026-11-13",
+        "modifications": "none",
+        "archive_member": "heygen-brandkit/heygen-tertiary-black-logo.svg"
+      },
+      "rights": {
+        "license": "LicenseRef-Brand-Owner",
+        "note": "The project MIT license does not grant rights to this brand asset."
+      }
+    },
+    {
+      "id": "heygen-tertiary-white-color-logo",
+      "file": "brands/heygen/heygen-tertiary-white-color-logo.svg",
+      "format": "svg",
+      "role": "lockup",
+      "theme": "dark",
+      "sha256": "8c150e4e8ad7716f401cee35fe07f26233f5639c92fecd304b80c6307ca25be3",
+      "source": {
+        "kind": "official-brand-kit",
+        "page": "https://www.heygen.com/brand-kit",
+        "url": "https://dynamic.heygen.ai/Heygen%20Brand-kit/heygen-brandkit.zip",
+        "retrieved": "2026-11-13",
+        "modifications": "none",
+        "archive_member": "heygen-brandkit/heygen-tertiary-white-color-logo.svg"
+      },
+      "rights": {
+        "license": "LicenseRef-Brand-Owner",
+        "note": "The project MIT license does not grant rights to this brand asset."
+      }
+    },
+    {
+      "id": "heygen-tertiary-white-logo",
+      "file": "brands/heygen/heygen-tertiary-white-logo.svg",
+      "format": "svg",
+      "role": "lockup",
+      "theme": "dark",
+      "sha256": "50f42357ea7544b2800b0fe67549687b83d9ecb2b2f52cc4fde9e87f6c0c9eb6",
+      "source": {
+        "kind": "official-brand-kit",
+        "page": "https://www.heygen.com/brand-kit",
+        "url": "https://dynamic.heygen.ai/Heygen%20Brand-kit/heygen-brandkit.zip",
+        "retrieved": "2026-11-13",
+        "modifications": "none",
+        "archive_member": "heygen-brandkit/heygen-tertiary-white-logo.svg"
+      },
+      "rights": {
+        "license": "LicenseRef-Brand-Owner",
+        "note": "The project MIT license does not grant rights to this brand asset."
+      }
+    }
+  ]
+}

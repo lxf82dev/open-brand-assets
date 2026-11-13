@@ -1,0 +1,55 @@
+{
+  "id": "runware",
+  "name": "Runware",
+  "website": "https://runware.ai",
+  "aliases": [],
+  "categories": [
+    "AI"
+  ],
+  "usage": {
+    "status": "unverified",
+    "guidelines": null,
+    "note": "Official website favicon and wordmark. No blanket use or redistribution permission has been verified; check with the owner for the intended context.",
+    "checked": "2026-11-13"
+  },
+  "assets": [
+    {
+      "id": "site-icon",
+      "file": "brands/runware/site-icon.svg",
+      "format": "svg",
+      "role": "site-icon",
+      "theme": "any",
+      "sha256": "5ef399d2b89a93aee2e5df75134abf6c24f7e4b227aaaf009129ee62f1deaf03",
+      "source": {
+        "kind": "official-website",
+        "page": "https://runware.ai/",
+        "url": "https://website.runware.ai/favicon.svg",
+        "retrieved": "2026-11-13",
+        "modifications": "none"
+      },
+      "rights": {
+        "license": "LicenseRef-Brand-Owner",
+        "note": "The project MIT license does not grant rights to this brand asset."
+      }
+    },
+    {
+      "id": "wordmark-white",
+      "file": "brands/runware/wordmark-white.svg",
+      "format": "svg",
+      "role": "wordmark",
+      "theme": "dark",
+      "sha256": "09446bb08fdf84d926aff9c99273517c5ba68a745ad9d175eb3836f8257b7000",
+      "source": {
+        "kind": "official-website",
+        "page": "https://runware.ai/",
+        "url": "https://runware.ai/logos/wordmark-white.svg",
+        "retrieved": "2026-11-13",
+        "modifications": "none"
+      },
+      "rights": {
+        "license": "LicenseRef-Brand-Owner",
+        "note": "The project MIT license does not grant rights to this brand asset."
+      }
+    }
+  ]
+}

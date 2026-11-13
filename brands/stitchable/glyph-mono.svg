@@ -1,0 +1,18 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Stitchable">
+  
+  <rect x="21" y="23" width="35" height="35" rx="10" fill="#14121C" stroke="#FFFFFF" stroke-width="2"></rect>
+  <path d="M19 33 C 12 33, 8 38, 6 42" stroke="#14121C" stroke-width="6" stroke-linecap="round" fill="none"></path>
+  <circle cx="5" cy="43" r="4.6" fill="#14121C"></circle>
+  <path d="M45 38 C 52 38, 56 33, 58 29" stroke="#14121C" stroke-width="6" stroke-linecap="round" fill="none"></path>
+  <circle cx="59" cy="28" r="4.6" fill="#14121C"></circle>
+  <rect x="14" y="15" width="35" height="35" rx="10" fill="#FFFFFF" stroke="#14121C" stroke-width="3"></rect>
+  <g fill="#14121C">
+    <rect x="18" y="20" width="3.4" height="4.4" rx="1.2"></rect>
+    <rect x="18" y="29.3" width="3.4" height="4.4" rx="1.2"></rect>
+    <rect x="18" y="38.6" width="3.4" height="4.4" rx="1.2"></rect>
+    <rect x="41.6" y="20" width="3.4" height="4.4" rx="1.2"></rect>
+    <rect x="41.6" y="29.3" width="3.4" height="4.4" rx="1.2"></rect>
+    <rect x="41.6" y="38.6" width="3.4" height="4.4" rx="1.2"></rect>
+  </g>
+  <path d="M28 26 L28 41.5 L40.5 33.75 Z" fill="#14121C"></path>
+</svg>

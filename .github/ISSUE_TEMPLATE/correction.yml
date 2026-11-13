@@ -1,0 +1,17 @@
+name: Correct or remove an asset
+description: Report source, artwork, usage metadata, or rights concerns.
+title: 'Correction: '
+body:
+  - type: input
+    id: path
+    attributes:
+      label: Affected brand or asset path
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: Requested change and official supporting source
+      description: Do not include confidential agreements or personal information.
+    validations:
+      required: true

@@ -1,0 +1,913 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/lxf82dev/open-brand-assets",
+  "brands": [
+    {
+      "id": "black-forest-labs",
+      "name": "Black Forest Labs",
+      "website": "https://bfl.ai",
+      "aliases": [
+        "bfl",
+        "flux"
+      ],
+      "categories": [
+        "AI"
+      ],
+      "usage": {
+        "status": "guidelines-available",
+        "guidelines": "https://bfl.ai/brand",
+        "note": "Official brand downloads. Follow the external-entity guidelines, keep assets unmodified, and choose the supplied black or white artwork.",
+        "checked": "2026-11-13"
+      },
+      "assets": [
+        {
+          "id": "logotype-black",
+          "file": "brands/black-forest-labs/logotype-black.svg",
+          "format": "svg",
+          "role": "wordmark",
+          "theme": "light",
+          "sha256": "11b5f57572d2730eef9b09804edd79f0494b663d204712c3b9ca844afdbd3282",
+          "source": {
+            "kind": "official-brand-kit",
+            "page": "https://bfl.ai/brand",
+            "url": "https://bfl.ai/brand/logotype-black.svg",
+            "retrieved": "2026-11-13",
+            "modifications": "none"
+          },
+          "rights": {
+            "license": "LicenseRef-Brand-Owner",
+            "note": "The project MIT license does not grant rights to this brand asset."
+          }
+        },
+        {
+          "id": "logotype-white",
+          "file": "brands/black-forest-labs/logotype-white.svg",
+          "format": "svg",
+          "role": "wordmark",
+          "theme": "dark",
+          "sha256": "c7d0aeb0f3222db565a15bee5d22f82e29220b801e84f5be62d726c9b3e23aac",
+          "source": {
+            "kind": "official-brand-kit",
+            "page": "https://bfl.ai/brand",
+            "url": "https://bfl.ai/brand/logotype-white.svg",
+            "retrieved": "2026-11-13",
+            "modifications": "none"
+          },
+          "rights": {
+            "license": "LicenseRef-Brand-Owner",
+            "note": "The project MIT license does not grant rights to this brand asset."
+          }
+        },
+        {
+          "id": "symbol-black",
+          "file": "brands/black-forest-labs/symbol-black.svg",
+          "format": "svg",
+          "role": "symbol",
+          "theme": "light",
+          "sha256": "441ccf70c7312b62746a0cb4767bd489cb193b90cbded2ec40a57e77e9aa817c",
+          "source": {
+            "kind": "official-brand-kit",
+            "page": "https://bfl.ai/brand",
+            "url": "https://bfl.ai/brand/symbol-black.svg",
+            "retrieved": "2026-11-13",
+            "modifications": "none"
+          },
+          "rights": {
+            "license": "LicenseRef-Brand-Owner",
+            "note": "The project MIT license does not grant rights to this brand asset."
+          }
+        },
+        {
+          "id": "symbol-white",
+          "file": "brands/black-forest-labs/symbol-white.svg",
+          "format": "svg",
+          "role": "symbol",
+          "theme": "dark",
+          "sha256": "53f1a76c802721f4df894cb0c88a5242d0111d597318732a6607f8257e076ca9",
+          "source": {
+            "kind": "official-brand-kit",
+            "page": "https://bfl.ai/brand",
+            "url": "https://bfl.ai/brand/symbol-white.svg",
+            "retrieved": "2026-11-13",
+            "modifications": "none"
+          },
+          "rights": {
+            "license": "LicenseRef-Brand-Owner",
+            "note": "The project MIT license does not grant rights to this brand asset."
+          }
+        }
+      ]
+    },
+    {
+      "id": "editableframes",
+      "name": "EditableFrames",
+      "website": "https://editableframes.stitchable.ai",
+      "aliases": [
+        "editable frames"
+      ],
+      "categories": [
+        "Design"
+      ],
+      "usage": {
+        "status": "owner-supplied",
+        "guidelines": null,
+        "note": "Supplied from the owner-authorized Stitchable site workspace. Brand rights remain with their owner; no separate public trademark license is granted.",
+        "checked": "2026-11-13"
+      },
+      "assets": [
+        {
+          "id": "app-icon",
+          "file": "brands/editableframes/app-icon.svg",
+          "format": "svg",
+          "role": "app-icon",
+          "theme": "any",
+          "sha256": "d39fd5deb761d2a7fc98156aa4fed38bc74f5458b704af0a67a24044f1b57d2a",
+          "source": {
+            "kind": "owner-supplied",
+            "page": "https://stitchable.ai/",
+            "url": "https://stitchable.ai/editableframes-icon.svg",
+            "retrieved": "2026-11-13",
+            "modifications": "none"
+          },
+          "rights": {
+            "license": "LicenseRef-Brand-Owner",
+            "note": "The project MIT license does not grant rights to this brand asset."
+          }
+        }
+      ]
+    },
+    {
+      "id": "heygen",
+      "name": "HeyGen",
+      "website": "https://www.heygen.com",
+      "aliases": [
+        "hey gen"
+      ],
+      "categories": [
+        "AI"
+      ],
+      "usage": {
+        "status": "guidelines-available",
+        "guidelines": "https://www.heygen.com/brand-kit",
+        "note": "Official kit for content featuring or referencing HeyGen. Preserve assets, keep marks separate, and avoid implied endorsement. Consult the linked guidelines for the intended use.",
+        "checked": "2026-11-13"
+      },
+      "assets": [
+        {
+          "id": "heygen-full-black-color-logo",
+          "file": "brands/heygen/heygen-full-black-color-logo.svg",
+          "format": "svg",
+          "role": "lockup",
+          "theme": "light",
+          "sha256": "ca534b437ab07668374b0af934bd1b1370cc309eea7bc78a733baee8291c30a1",
+          "source": {
+            "kind": "official-brand-kit",
+            "page": "https://www.heygen.com/brand-kit",
+            "url": "https://dynamic.heygen.ai/Heygen%20Brand-kit/heygen-brandkit.zip",
+            "retrieved": "2026-11-13",
+            "modifications": "none",
+            "archive_member": "heygen-brandkit/heygen-full-black-color-logo.svg"
+          },
+          "rights": {
+            "license": "LicenseRef-Brand-Owner",
+            "note": "The project MIT license does not grant rights to this brand asset."
+          }
+        },
+        {
+          "id": "heygen-full-black-logo",
+          "file": "brands/heygen/heygen-full-black-logo.svg",
+          "format": "svg",
+          "role": "lockup",
+          "theme": "light",
+          "sha256": "4ec14e588879ab89bc74ca7d8d86857fa4b7b709661af6c10ad49008e6ffb4c3",
+          "source": {
+            "kind": "official-brand-kit",
+            "page": "https://www.heygen.com/brand-kit",
+            "url": "https://dynamic.heygen.ai/Heygen%20Brand-kit/heygen-brandkit.zip",
+            "retrieved": "2026-11-13",
+            "modifications": "none",
+            "archive_member": "heygen-brandkit/heygen-full-black-logo.svg"
+          },
+          "rights": {
+            "license": "LicenseRef-Brand-Owner",
+            "note": "The project MIT license does not grant rights to this brand asset."
+          }
+        },
+        {
+          "id": "heygen-full-white-color-logo",
+          "file": "brands/heygen/heygen-full-white-color-logo.svg",
+          "format": "svg",
+          "role": "lockup",
+          "theme": "dark",
+          "sha256": "bb34460e7dded3b0f2e627ae1f7b2caeac452580993b5dc02df40859c46f0fac",
+          "source": {
+            "kind": "official-brand-kit",
+            "page": "https://www.heygen.com/brand-kit",
+            "url": "https://dynamic.heygen.ai/Heygen%20Brand-kit/heygen-brandkit.zip",
+            "retrieved": "2026-11-13",
+            "modifications": "none",
+            "archive_member": "heygen-brandkit/heygen-full-white-color-logo.svg"
+          },
+          "rights": {
+            "license": "LicenseRef-Brand-Owner",
+            "note": "The project MIT license does not grant rights to this brand asset."
+          }
+        },
+        {
+          "id": "heygen-full-white-logo",
+          "file": "brands/heygen/heygen-full-white-logo.svg",
+          "format": "svg",
+          "role": "lockup",
+          "theme": "dark",
+          "sha256": "c091d02da26d571b1c12808a5b171bb2f7dbd66f998c6ab8c2079c7f3b0c2510",
+          "source": {
+            "kind": "official-brand-kit",
+            "page": "https://www.heygen.com/brand-kit",
+            "url": "https://dynamic.heygen.ai/Heygen%20Brand-kit/heygen-brandkit.zip",
+            "retrieved": "2026-11-13",
+            "modifications": "none",
+            "archive_member": "heygen-brandkit/heygen-full-white-logo.svg"
+          },
+          "rights": {
+            "license": "LicenseRef-Brand-Owner",
+            "note": "The project MIT license does not grant rights to this brand asset."
+          }
+        },
+        {
+          "id": "heygen-secondary-black-color-logo",
+          "file": "brands/heygen/heygen-secondary-black-color-logo.svg",
+          "format": "svg",
+          "role": "lockup",
+          "theme": "light",
+          "sha256": "627d72c01e4ab84eb567164666c0993177eae7b7a6025947408700058a51af32",
+          "source": {
+            "kind": "official-brand-kit",
+            "page": "https://www.heygen.com/brand-kit",
+            "url": "https://dynamic.heygen.ai/Heygen%20Brand-kit/heygen-brandkit.zip",
+            "retrieved": "2026-11-13",
+            "modifications": "none",
+            "archive_member": "heygen-brandkit/heygen-secondary-black-color-logo.svg"
+          },
+          "rights": {
+            "license": "LicenseRef-Brand-Owner",
+            "note": "The project MIT license does not grant rights to this brand asset."
+          }
+        },
+        {
+          "id": "heygen-secondary-black-logo",
+          "file": "brands/heygen/heygen-secondary-black-logo.svg",
+          "format": "svg",
+          "role": "lockup",
+          "theme": "light",
+          "sha256": "f89d39848e0a1be1083ec02c4d864b024728bc568c16f449a829f194434cd98a",
+          "source": {
+            "kind": "official-brand-kit",
+            "page": "https://www.heygen.com/brand-kit",
+            "url": "https://dynamic.heygen.ai/Heygen%20Brand-kit/heygen-brandkit.zip",
+            "retrieved": "2026-11-13",
+            "modifications": "none",
+            "archive_member": "heygen-brandkit/heygen-secondary-black-logo.svg"
+          },
+          "rights": {
+            "license": "LicenseRef-Brand-Owner",
+            "note": "The project MIT license does not grant rights to this brand asset."
+          }
+        },
+        {
+          "id": "heygen-secondary-white-color-logo",
+          "file": "brands/heygen/heygen-secondary-white-color-logo.svg",
+          "format": "svg",
+          "role": "lockup",
+          "theme": "dark",
+          "sha256": "9d604850f4cf1d71cb7553d9a5bc015246f51f193594b4ee5f215ba0c634fb88",
+          "source": {
+            "kind": "official-brand-kit",
+            "page": "https://www.heygen.com/brand-kit",
+            "url": "https://dynamic.heygen.ai/Heygen%20Brand-kit/heygen-brandkit.zip",
+            "retrieved": "2026-11-13",
+            "modifications": "none",
+            "archive_member": "heygen-brandkit/heygen-secondary-white-color-logo.svg"
+          },
+          "rights": {
+            "license": "LicenseRef-Brand-Owner",
+            "note": "The project MIT license does not grant rights to this brand asset."
+          }
+        },
+        {
+          "id": "heygen-secondary-white-logo",
+          "file": "brands/heygen/heygen-secondary-white-logo.svg",
+          "format": "svg",
+          "role": "lockup",
+          "theme": "dark",
+          "sha256": "d7c39b90b9c834fa76e329703ff1dec16fc51c10b6e41942cae541d74758c9ad",
+          "source": {
+            "kind": "official-brand-kit",
+            "page": "https://www.heygen.com/brand-kit",
+            "url": "https://dynamic.heygen.ai/Heygen%20Brand-kit/heygen-brandkit.zip",
+            "retrieved": "2026-11-13",
+            "modifications": "none",
+            "archive_member": "heygen-brandkit/heygen-secondary-white-logo.svg"
+          },
+          "rights": {
+            "license": "LicenseRef-Brand-Owner",
+            "note": "The project MIT license does not grant rights to this brand asset."
+          }
+        },
+        {
+          "id": "heygen-symbol-black-logo",
+          "file": "brands/heygen/heygen-symbol-black-logo.svg",
+          "format": "svg",
+          "role": "symbol",
+          "theme": "light",
+          "sha256": "eb64f05c43aaee1e947e540a83a98e54f738d4d5e2fd077906dbd33845d7b408",
+          "source": {
+            "kind": "official-brand-kit",
+            "page": "https://www.heygen.com/brand-kit",
+            "url": "https://dynamic.heygen.ai/Heygen%20Brand-kit/heygen-brandkit.zip",
+            "retrieved": "2026-11-13",
+            "modifications": "none",
+            "archive_member": "heygen-brandkit/heygen-symbol-black-logo.svg"
+          },
+          "rights": {
+            "license": "LicenseRef-Brand-Owner",
+            "note": "The project MIT license does not grant rights to this brand asset."
+          },
+          "note": "Official SVG container includes embedded PNG artwork; not fully vector."
+        },
+        {
+          "id": "heygen-symbol-blue-logo",
+          "file": "brands/heygen/heygen-symbol-blue-logo.svg",
+          "format": "svg",
+          "role": "symbol",
+          "theme": "any",
+          "sha256": "c175c31c412027fef5648677a23ee119a42fc8897bd00c28e3c98f122357c955",
+          "source": {
+            "kind": "official-brand-kit",
+            "page": "https://www.heygen.com/brand-kit",
+            "url": "https://dynamic.heygen.ai/Heygen%20Brand-kit/heygen-brandkit.zip",
+            "retrieved": "2026-11-13",
+            "modifications": "none",
+            "archive_member": "heygen-brandkit/heygen-symbol-blue-logo.svg"
+          },
+          "rights": {
+            "license": "LicenseRef-Brand-Owner",
+            "note": "The project MIT license does not grant rights to this brand asset."
+          },
+          "note": "Official SVG container includes embedded PNG artwork; not fully vector."
+        },
+        {
+          "id": "heygen-symbol-white-logo",
+          "file": "brands/heygen/heygen-symbol-white-logo.svg",
+          "format": "svg",
+          "role": "symbol",
+          "theme": "dark",
+          "sha256": "997142e32fea79b5b400d43b33b90fc4c093cab715914ff0e458627abc1cebd6",
+          "source": {
+            "kind": "official-brand-kit",
+            "page": "https://www.heygen.com/brand-kit",
+            "url": "https://dynamic.heygen.ai/Heygen%20Brand-kit/heygen-brandkit.zip",
+            "retrieved": "2026-11-13",
+            "modifications": "none",
+            "archive_member": "heygen-brandkit/heygen-symbol-white-logo.svg"
+          },
+          "rights": {
+            "license": "LicenseRef-Brand-Owner",
+            "note": "The project MIT license does not grant rights to this brand asset."
+          },
+          "note": "Official SVG container includes embedded PNG artwork; not fully vector."
+        },
+        {
+          "id": "heygen-tertiary-black-color-logo",
+          "file": "brands/heygen/heygen-tertiary-black-color-logo.svg",
+          "format": "svg",
+          "role": "lockup",
+          "theme": "light",
+          "sha256": "b6f4209a3bdffeba1b297e00b1b8ddca0762eb392ecfeb318898a4e7c887fca6",
+          "source": {
+            "kind": "official-brand-kit",
+            "page": "https://www.heygen.com/brand-kit",
+            "url": "https://dynamic.heygen.ai/Heygen%20Brand-kit/heygen-brandkit.zip",
+            "retrieved": "2026-11-13",
+            "modifications": "none",
+            "archive_member": "heygen-brandkit/heygen-tertiary-black-color-logo.svg"
+          },
+          "rights": {
+            "license": "LicenseRef-Brand-Owner",
+            "note": "The project MIT license does not grant rights to this brand asset."
+          }
+        },
+        {
+          "id": "heygen-tertiary-black-logo",
+          "file": "brands/heygen/heygen-tertiary-black-logo.svg",
+          "format": "svg",
+          "role": "lockup",
+          "theme": "light",
+          "sha256": "eef5845e9be359971c681ca38e64eace9e06dde7803227b5fb9a0a61b083a5fc",
+          "source": {
+            "kind": "official-brand-kit",
+            "page": "https://www.heygen.com/brand-kit",
+            "url": "https://dynamic.heygen.ai/Heygen%20Brand-kit/heygen-brandkit.zip",
+            "retrieved": "2026-11-13",
+            "modifications": "none",
+            "archive_member": "heygen-brandkit/heygen-tertiary-black-logo.svg"
+          },
+          "rights": {
+            "license": "LicenseRef-Brand-Owner",
+            "note": "The project MIT license does not grant rights to this brand asset."
+          }
+        },
+        {
+          "id": "heygen-tertiary-white-color-logo",
+          "file": "brands/heygen/heygen-tertiary-white-color-logo.svg",
+          "format": "svg",
+          "role": "lockup",
+          "theme": "dark",
+          "sha256": "8c150e4e8ad7716f401cee35fe07f26233f5639c92fecd304b80c6307ca25be3",
+          "source": {
+            "kind": "official-brand-kit",
+            "page": "https://www.heygen.com/brand-kit",
+            "url": "https://dynamic.heygen.ai/Heygen%20Brand-kit/heygen-brandkit.zip",
+            "retrieved": "2026-11-13",
+            "modifications": "none",
+            "archive_member": "heygen-brandkit/heygen-tertiary-white-color-logo.svg"
+          },
+          "rights": {
+            "license": "LicenseRef-Brand-Owner",
+            "note": "The project MIT license does not grant rights to this brand asset."
+          }
+        },
+        {
+          "id": "heygen-tertiary-white-logo",
+          "file": "brands/heygen/heygen-tertiary-white-logo.svg",
+          "format": "svg",
+          "role": "lockup",
+          "theme": "dark",
+          "sha256": "50f42357ea7544b2800b0fe67549687b83d9ecb2b2f52cc4fde9e87f6c0c9eb6",
+          "source": {
+            "kind": "official-brand-kit",
+            "page": "https://www.heygen.com/brand-kit",
+            "url": "https://dynamic.heygen.ai/Heygen%20Brand-kit/heygen-brandkit.zip",
+            "retrieved": "2026-11-13",
+            "modifications": "none",
+            "archive_member": "heygen-brandkit/heygen-tertiary-white-logo.svg"
+          },
+          "rights": {
+            "license": "LicenseRef-Brand-Owner",
+            "note": "The project MIT license does not grant rights to this brand asset."
+          }
+        }
+      ]
+    },
+    {
+      "id": "higgsfield",
+      "name": "Higgsfield",
+      "website": "https://higgsfield.ai",
+      "aliases": [],
+      "categories": [
+        "AI"
+      ],
+      "usage": {
+        "status": "unverified",
+        "guidelines": "https://higgsfield.ai/terms-of-use-agreement",
+        "note": "Official website icons. Terms prohibit implying endorsement, sponsorship, or affiliation without consent. No blanket use or redistribution grant has been verified.",
+        "checked": "2026-11-13"
+      },
+      "assets": [
+        {
+          "id": "site-icon",
+          "file": "brands/higgsfield/site-icon.png",
+          "format": "png",
+          "role": "site-icon",
+          "theme": "any",
+          "sha256": "77edee005ae63f7881f930b815392b6cfa607f960ffb419d1c9df52e37fd50c1",
+          "source": {
+            "kind": "official-website",
+            "page": "https://higgsfield.ai/",
+            "url": "https://higgsfield.ai/icon.png",
+            "retrieved": "2026-11-13",
+            "modifications": "none"
+          },
+          "rights": {
+            "license": "LicenseRef-Brand-Owner",
+            "note": "The project MIT license does not grant rights to this brand asset."
+          }
+        },
+        {
+          "id": "touch-icon",
+          "file": "brands/higgsfield/touch-icon.png",
+          "format": "png",
+          "role": "site-icon",
+          "theme": "any",
+          "sha256": "47f5136c65f9dd2360c59d2b65d06d9e7289230aa4edd7b150f28e6f0582bf1c",
+          "source": {
+            "kind": "official-website",
+            "page": "https://higgsfield.ai/",
+            "url": "https://higgsfield.ai/apple-icon.png",
+            "retrieved": "2026-11-13",
+            "modifications": "none"
+          },
+          "rights": {
+            "license": "LicenseRef-Brand-Owner",
+            "note": "The project MIT license does not grant rights to this brand asset."
+          }
+        }
+      ]
+    },
+    {
+      "id": "libtv",
+      "name": "LibTV",
+      "website": "https://www.liblib.tv",
+      "aliases": [
+        "lib tv",
+        "liblib tv"
+      ],
+      "categories": [
+        "AI"
+      ],
+      "usage": {
+        "status": "unverified",
+        "guidelines": null,
+        "note": "Official website touch icon. No public logo-use or redistribution license was verified.",
+        "checked": "2026-11-13"
+      },
+      "assets": [
+        {
+          "id": "touch-icon",
+          "file": "brands/libtv/touch-icon.png",
+          "format": "png",
+          "role": "site-icon",
+          "theme": "any",
+          "sha256": "49a8e1fd8c147c6e6f6f949b3fac6589fd2828126812d432b7f08a68983ca611",
+          "source": {
+            "kind": "official-website",
+            "page": "https://www.liblib.tv/",
+            "url": "https://www.liblib.tv/pwa/libtv/apple-touch-icon-180.png",
+            "retrieved": "2026-11-13",
+            "modifications": "none"
+          },
+          "rights": {
+            "license": "LicenseRef-Brand-Owner",
+            "note": "The project MIT license does not grant rights to this brand asset."
+          }
+        }
+      ]
+    },
+    {
+      "id": "openrouter",
+      "name": "OpenRouter",
+      "website": "https://openrouter.ai",
+      "aliases": [
+        "open router"
+      ],
+      "categories": [
+        "AI"
+      ],
+      "usage": {
+        "status": "guidelines-available",
+        "guidelines": "https://openrouter.ai/brand",
+        "note": "Official brand downloads. Do not stretch, recolor, or remix marks. Use the supplied colorway for the intended background.",
+        "checked": "2026-11-13"
+      },
+      "assets": [
+        {
+          "id": "glyph-cloud",
+          "file": "brands/openrouter/glyph-cloud.svg",
+          "format": "svg",
+          "role": "symbol",
+          "theme": "dark",
+          "sha256": "385bbf00cd5718ad652fdfc05b4b4e7d0ea3a834cfd807e1133d3bee2b9a7c81",
+          "source": {
+            "kind": "official-brand-kit",
+            "page": "https://openrouter.ai/brand",
+            "url": "https://openrouter.ai/brand/logos/transparent/glyph/svg/glyph-cloud.svg",
+            "retrieved": "2026-11-13",
+            "modifications": "none"
+          },
+          "rights": {
+            "license": "LicenseRef-Brand-Owner",
+            "note": "The project MIT license does not grant rights to this brand asset."
+          }
+        },
+        {
+          "id": "glyph-grape",
+          "file": "brands/openrouter/glyph-grape.svg",
+          "format": "svg",
+          "role": "symbol",
+          "theme": "light",
+          "sha256": "5b49593d44e6aa41011be377e182cd89e57473f1948e0dfb128f99a92adfc68d",
+          "source": {
+            "kind": "official-brand-kit",
+            "page": "https://openrouter.ai/brand",
+            "url": "https://openrouter.ai/brand/logos/transparent/glyph/svg/glyph-grape.svg",
+            "retrieved": "2026-11-13",
+            "modifications": "none"
+          },
+          "rights": {
+            "license": "LicenseRef-Brand-Owner",
+            "note": "The project MIT license does not grant rights to this brand asset."
+          }
+        },
+        {
+          "id": "glyph-ink",
+          "file": "brands/openrouter/glyph-ink.svg",
+          "format": "svg",
+          "role": "symbol",
+          "theme": "light",
+          "sha256": "91be6b8a91745f089bfe42b89a5cbcd4b666fca6473610f9a6c11a31bd7523bc",
+          "source": {
+            "kind": "official-brand-kit",
+            "page": "https://openrouter.ai/brand",
+            "url": "https://openrouter.ai/brand/logos/transparent/glyph/svg/glyph-ink.svg",
+            "retrieved": "2026-11-13",
+            "modifications": "none"
+          },
+          "rights": {
+            "license": "LicenseRef-Brand-Owner",
+            "note": "The project MIT license does not grant rights to this brand asset."
+          }
+        },
+        {
+          "id": "glyph-volt",
+          "file": "brands/openrouter/glyph-volt.svg",
+          "format": "svg",
+          "role": "symbol",
+          "theme": "dark",
+          "sha256": "0d22462e4f2835a5a5b9000af0a55fc9238e39996100f54706e41ec45b9d1727",
+          "source": {
+            "kind": "official-brand-kit",
+            "page": "https://openrouter.ai/brand",
+            "url": "https://openrouter.ai/brand/logos/transparent/glyph/svg/glyph-volt.svg",
+            "retrieved": "2026-11-13",
+            "modifications": "none"
+          },
+          "rights": {
+            "license": "LicenseRef-Brand-Owner",
+            "note": "The project MIT license does not grant rights to this brand asset."
+          }
+        },
+        {
+          "id": "horizontal-cloud",
+          "file": "brands/openrouter/horizontal-cloud.svg",
+          "format": "svg",
+          "role": "lockup",
+          "theme": "dark",
+          "sha256": "29a7ab5a1b5beaff491eb616a49d71d7e7efa84722c2e3865d868bacff1dea23",
+          "source": {
+            "kind": "official-brand-kit",
+            "page": "https://openrouter.ai/brand",
+            "url": "https://openrouter.ai/brand/logos/transparent/horizontal/svg/horizontal-cloud.svg",
+            "retrieved": "2026-11-13",
+            "modifications": "none"
+          },
+          "rights": {
+            "license": "LicenseRef-Brand-Owner",
+            "note": "The project MIT license does not grant rights to this brand asset."
+          }
+        },
+        {
+          "id": "horizontal-grape",
+          "file": "brands/openrouter/horizontal-grape.svg",
+          "format": "svg",
+          "role": "lockup",
+          "theme": "light",
+          "sha256": "52ebce48bc80a336d6944fc11308493cdde298acacc9844d68947c574a4d14cb",
+          "source": {
+            "kind": "official-brand-kit",
+            "page": "https://openrouter.ai/brand",
+            "url": "https://openrouter.ai/brand/logos/transparent/horizontal/svg/horizontal-grape.svg",
+            "retrieved": "2026-11-13",
+            "modifications": "none"
+          },
+          "rights": {
+            "license": "LicenseRef-Brand-Owner",
+            "note": "The project MIT license does not grant rights to this brand asset."
+          }
+        },
+        {
+          "id": "horizontal-ink",
+          "file": "brands/openrouter/horizontal-ink.svg",
+          "format": "svg",
+          "role": "lockup",
+          "theme": "light",
+          "sha256": "dfd914ef54fc38a16bed233ca43a0927feb0267949b5f7c099966984d7740db4",
+          "source": {
+            "kind": "official-brand-kit",
+            "page": "https://openrouter.ai/brand",
+            "url": "https://openrouter.ai/brand/logos/transparent/horizontal/svg/horizontal-ink.svg",
+            "retrieved": "2026-11-13",
+            "modifications": "none"
+          },
+          "rights": {
+            "license": "LicenseRef-Brand-Owner",
+            "note": "The project MIT license does not grant rights to this brand asset."
+          }
+        },
+        {
+          "id": "horizontal-volt",
+          "file": "brands/openrouter/horizontal-volt.svg",
+          "format": "svg",
+          "role": "lockup",
+          "theme": "dark",
+          "sha256": "3f3e72a1732d4df7eb584e7e8e98a1f2f701513502d27c492a2d715ca491e4ab",
+          "source": {
+            "kind": "official-brand-kit",
+            "page": "https://openrouter.ai/brand",
+            "url": "https://openrouter.ai/brand/logos/transparent/horizontal/svg/horizontal-volt.svg",
+            "retrieved": "2026-11-13",
+            "modifications": "none"
+          },
+          "rights": {
+            "license": "LicenseRef-Brand-Owner",
+            "note": "The project MIT license does not grant rights to this brand asset."
+          }
+        },
+        {
+          "id": "vertical-cloud",
+          "file": "brands/openrouter/vertical-cloud.svg",
+          "format": "svg",
+          "role": "lockup",
+          "theme": "dark",
+          "sha256": "f6d03a6fd750040f400119a475866380168c7e7b39eb426f4007b90323306566",
+          "source": {
+            "kind": "official-brand-kit",
+            "page": "https://openrouter.ai/brand",
+            "url": "https://openrouter.ai/brand/logos/transparent/vertical/svg/vertical-cloud.svg",
+            "retrieved": "2026-11-13",
+            "modifications": "none"
+          },
+          "rights": {
+            "license": "LicenseRef-Brand-Owner",
+            "note": "The project MIT license does not grant rights to this brand asset."
+          }
+        },
+        {
+          "id": "vertical-grape",
+          "file": "brands/openrouter/vertical-grape.svg",
+          "format": "svg",
+          "role": "lockup",
+          "theme": "light",
+          "sha256": "a54db111460e7ed2e236e4b2bfec83fb12cb9c517fc8e662c9e286dde9385abb",
+          "source": {
+            "kind": "official-brand-kit",
+            "page": "https://openrouter.ai/brand",
+            "url": "https://openrouter.ai/brand/logos/transparent/vertical/svg/vertical-grape.svg",
+            "retrieved": "2026-11-13",
+            "modifications": "none"
+          },
+          "rights": {
+            "license": "LicenseRef-Brand-Owner",
+            "note": "The project MIT license does not grant rights to this brand asset."
+          }
+        },
+        {
+          "id": "vertical-ink",
+          "file": "brands/openrouter/vertical-ink.svg",
+          "format": "svg",
+          "role": "lockup",
+          "theme": "light",
+          "sha256": "980ae0cffcf4de333430c77d997ccb3b6d8687b89ac9031eb4a460aab411edac",
+          "source": {
+            "kind": "official-brand-kit",
+            "page": "https://openrouter.ai/brand",
+            "url": "https://openrouter.ai/brand/logos/transparent/vertical/svg/vertical-ink.svg",
+            "retrieved": "2026-11-13",
+            "modifications": "none"
+          },
+          "rights": {
+            "license": "LicenseRef-Brand-Owner",
+            "note": "The project MIT license does not grant rights to this brand asset."
+          }
+        },
+        {
+          "id": "vertical-volt",
+          "file": "brands/openrouter/vertical-volt.svg",
+          "format": "svg",
+          "role": "lockup",
+          "theme": "dark",
+          "sha256": "5047cdd5bbbb34865b6ed01b5acea90422b6e8a2cdecd633abc283eaca420ddc",
+          "source": {
+            "kind": "official-brand-kit",
+            "page": "https://openrouter.ai/brand",
+            "url": "https://openrouter.ai/brand/logos/transparent/vertical/svg/vertical-volt.svg",
+            "retrieved": "2026-11-13",
+            "modifications": "none"
+          },
+          "rights": {
+            "license": "LicenseRef-Brand-Owner",
+            "note": "The project MIT license does not grant rights to this brand asset."
+          }
+        }
+      ]
+    },
+    {
+      "id": "runware",
+      "name": "Runware",
+      "website": "https://runware.ai",
+      "aliases": [],
+      "categories": [
+        "AI"
+      ],
+      "usage": {
+        "status": "unverified",
+        "guidelines": null,
+        "note": "Official website favicon and wordmark. No blanket use or redistribution permission has been verified; check with the owner for the intended context.",
+        "checked": "2026-11-13"
+      },
+      "assets": [
+        {
+          "id": "site-icon",
+          "file": "brands/runware/site-icon.svg",
+          "format": "svg",
+          "role": "site-icon",
+          "theme": "any",
+          "sha256": "5ef399d2b89a93aee2e5df75134abf6c24f7e4b227aaaf009129ee62f1deaf03",
+          "source": {
+            "kind": "official-website",
+            "page": "https://runware.ai/",
+            "url": "https://website.runware.ai/favicon.svg",
+            "retrieved": "2026-11-13",
+            "modifications": "none"
+          },
+          "rights": {
+            "license": "LicenseRef-Brand-Owner",
+            "note": "The project MIT license does not grant rights to this brand asset."
+          }
+        },
+        {
+          "id": "wordmark-white",
+          "file": "brands/runware/wordmark-white.svg",
+          "format": "svg",
+          "role": "wordmark",
+          "theme": "dark",
+          "sha256": "09446bb08fdf84d926aff9c99273517c5ba68a745ad9d175eb3836f8257b7000",
+          "source": {
+            "kind": "official-website",
+            "page": "https://runware.ai/",
+            "url": "https://runware.ai/logos/wordmark-white.svg",
+            "retrieved": "2026-11-13",
+            "modifications": "none"
+          },
+          "rights": {
+            "license": "LicenseRef-Brand-Owner",
+            "note": "The project MIT license does not grant rights to this brand asset."
+          }
+        }
+      ]
+    },
+    {
+      "id": "stitchable",
+      "name": "Stitchable",
+      "website": "https://stitchable.ai",
+      "aliases": [],
+      "categories": [
+        "AI"
+      ],
+      "usage": {
+        "status": "owner-supplied",
+        "guidelines": null,
+        "note": "Supplied from the owner-authorized Stitchable site workspace. Brand rights remain with Stitchable; no separate public trademark license is granted.",
+        "checked": "2026-11-13"
+      },
+      "assets": [
+        {
+          "id": "glyph-color",
+          "file": "brands/stitchable/glyph-color.svg",
+          "format": "svg",
+          "role": "symbol",
+          "theme": "any",
+          "sha256": "cd6c19093b25f43e73840b79e19d052f68e4657ecf078fc86ea19386cda3a252",
+          "source": {
+            "kind": "owner-supplied",
+            "page": "https://stitchable.ai/",
+            "url": "https://stitchable.ai/logo-glyph.svg",
+            "retrieved": "2026-11-13",
+            "modifications": "none"
+          },
+          "rights": {
+            "license": "LicenseRef-Brand-Owner",
+            "note": "The project MIT license does not grant rights to this brand asset."
+          }
+        },
+        {
+          "id": "glyph-mono",
+          "file": "brands/stitchable/glyph-mono.svg",
+          "format": "svg",
+          "role": "symbol",
+          "theme": "any",
+          "sha256": "a6a51f8636f54a53340e60e31d602f9a3f3ebc4b52f5a02c8831772565c3a0f6",
+          "source": {
+            "kind": "owner-supplied",
+            "page": "https://stitchable.ai/",
+            "url": "https://stitchable.ai/logo-glyph-mono.svg",
+            "retrieved": "2026-11-13",
+            "modifications": "none"
+          },
+          "rights": {
+            "license": "LicenseRef-Brand-Owner",
+            "note": "The project MIT license does not grant rights to this brand asset."
+          }
+        }
+      ]
+    }
+  ]
+}

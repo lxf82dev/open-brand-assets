@@ -1,0 +1,96 @@
+{
+  "id": "black-forest-labs",
+  "name": "Black Forest Labs",
+  "website": "https://bfl.ai",
+  "aliases": [
+    "bfl",
+    "flux"
+  ],
+  "categories": [
+    "AI"
+  ],
+  "usage": {
+    "status": "guidelines-available",
+    "guidelines": "https://bfl.ai/brand",
+    "note": "Official brand downloads. Follow the external-entity guidelines, keep assets unmodified, and choose the supplied black or white artwork.",
+    "checked": "2026-11-13"
+  },
+  "assets": [
+    {
+      "id": "logotype-black",
+      "file": "brands/black-forest-labs/logotype-black.svg",
+      "format": "svg",
+      "role": "wordmark",
+      "theme": "light",
+      "sha256": "11b5f57572d2730eef9b09804edd79f0494b663d204712c3b9ca844afdbd3282",
+      "source": {
+        "kind": "official-brand-kit",
+        "page": "https://bfl.ai/brand",
+        "url": "https://bfl.ai/brand/logotype-black.svg",
+        "retrieved": "2026-11-13",
+        "modifications": "none"
+      },
+      "rights": {
+        "license": "LicenseRef-Brand-Owner",
+        "note": "The project MIT license does not grant rights to this brand asset."
+      }
+    },
+    {
+      "id": "logotype-white",
+      "file": "brands/black-forest-labs/logotype-white.svg",
+      "format": "svg",
+      "role": "wordmark",
+      "theme": "dark",
+      "sha256": "c7d0aeb0f3222db565a15bee5d22f82e29220b801e84f5be62d726c9b3e23aac",
+      "source": {
+        "kind": "official-brand-kit",
+        "page": "https://bfl.ai/brand",
+        "url": "https://bfl.ai/brand/logotype-white.svg",
+        "retrieved": "2026-11-13",
+        "modifications": "none"
+      },
+      "rights": {
+        "license": "LicenseRef-Brand-Owner",
+        "note": "The project MIT license does not grant rights to this brand asset."
+      }
+    },
+    {
+      "id": "symbol-black",
+      "file": "brands/black-forest-labs/symbol-black.svg",
+      "format": "svg",
+      "role": "symbol",
+      "theme": "light",
+      "sha256": "441ccf70c7312b62746a0cb4767bd489cb193b90cbded2ec40a57e77e9aa817c",
+      "source": {
+        "kind": "official-brand-kit",
+        "page": "https://bfl.ai/brand",
+        "url": "https://bfl.ai/brand/symbol-black.svg",
+        "retrieved": "2026-11-13",
+        "modifications": "none"
+      },
+      "rights": {
+        "license": "LicenseRef-Brand-Owner",
+        "note": "The project MIT license does not grant rights to this brand asset."
+      }
+    },
+    {
+      "id": "symbol-white",
+      "file": "brands/black-forest-labs/symbol-white.svg",
+      "format": "svg",
+      "role": "symbol",
+      "theme": "dark",
+      "sha256": "53f1a76c802721f4df894cb0c88a5242d0111d597318732a6607f8257e076ca9",
+      "source": {
+        "kind": "official-brand-kit",
+        "page": "https://bfl.ai/brand",
+        "url": "https://bfl.ai/brand/symbol-white.svg",
+        "retrieved": "2026-11-13",
+        "modifications": "none"
+      },
+      "rights": {
+        "license": "LicenseRef-Brand-Owner",
+        "note": "The project MIT license does not grant rights to this brand asset."
+      }
+    }
+  ]
+}

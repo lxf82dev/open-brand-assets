@@ -1,0 +1,23 @@
+name: Request a logo or variant
+description: Suggest a missing brand, official identity update, or variant.
+title: 'Logo: '
+body:
+  - type: input
+    id: brand
+    attributes:
+      label: Brand or product
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Official website or brand kit URL
+    validations:
+      required: true
+  - type: textarea
+    id: variant
+    attributes:
+      label: What is missing or outdated?
+      description: Include the variant, intended background, and known official usage guidelines.
+    validations:
+      required: true

@@ -1,0 +1,55 @@
+{
+  "id": "stitchable",
+  "name": "Stitchable",
+  "website": "https://stitchable.ai",
+  "aliases": [],
+  "categories": [
+    "AI"
+  ],
+  "usage": {
+    "status": "owner-supplied",
+    "guidelines": null,
+    "note": "Supplied from the owner-authorized Stitchable site workspace. Brand rights remain with Stitchable; no separate public trademark license is granted.",
+    "checked": "2026-11-13"
+  },
+  "assets": [
+    {
+      "id": "glyph-color",
+      "file": "brands/stitchable/glyph-color.svg",
+      "format": "svg",
+      "role": "symbol",
+      "theme": "any",
+      "sha256": "cd6c19093b25f43e73840b79e19d052f68e4657ecf078fc86ea19386cda3a252",
+      "source": {
+        "kind": "owner-supplied",
+        "page": "https://stitchable.ai/",
+        "url": "https://stitchable.ai/logo-glyph.svg",
+        "retrieved": "2026-11-13",
+        "modifications": "none"
+      },
+      "rights": {
+        "license": "LicenseRef-Brand-Owner",
+        "note": "The project MIT license does not grant rights to this brand asset."
+      }
+    },
+    {
+      "id": "glyph-mono",
+      "file": "brands/stitchable/glyph-mono.svg",
+      "format": "svg",
+      "role": "symbol",
+      "theme": "any",
+      "sha256": "a6a51f8636f54a53340e60e31d602f9a3f3ebc4b52f5a02c8831772565c3a0f6",
+      "source": {
+        "kind": "owner-supplied",
+        "page": "https://stitchable.ai/",
+        "url": "https://stitchable.ai/logo-glyph-mono.svg",
+        "retrieved": "2026-11-13",
+        "modifications": "none"
+      },
+      "rights": {
+        "license": "LicenseRef-Brand-Owner",
+        "note": "The project MIT license does not grant rights to this brand asset."
+      }
+    }
+  ]
+}

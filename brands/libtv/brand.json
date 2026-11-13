@@ -1,0 +1,39 @@
+{
+  "id": "libtv",
+  "name": "LibTV",
+  "website": "https://www.liblib.tv",
+  "aliases": [
+    "lib tv",
+    "liblib tv"
+  ],
+  "categories": [
+    "AI"
+  ],
+  "usage": {
+    "status": "unverified",
+    "guidelines": null,
+    "note": "Official website touch icon. No public logo-use or redistribution license was verified.",
+    "checked": "2026-11-13"
+  },
+  "assets": [
+    {
+      "id": "touch-icon",
+      "file": "brands/libtv/touch-icon.png",
+      "format": "png",
+      "role": "site-icon",
+      "theme": "any",
+      "sha256": "49a8e1fd8c147c6e6f6f949b3fac6589fd2828126812d432b7f08a68983ca611",
+      "source": {
+        "kind": "official-website",
+        "page": "https://www.liblib.tv/",
+        "url": "https://www.liblib.tv/pwa/libtv/apple-touch-icon-180.png",
+        "retrieved": "2026-11-13",
+        "modifications": "none"
+      },
+      "rights": {
+        "license": "LicenseRef-Brand-Owner",
+        "note": "The project MIT license does not grant rights to this brand asset."
+      }
+    }
+  ]
+}

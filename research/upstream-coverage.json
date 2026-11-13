@@ -1,0 +1,105 @@
+{
+  "checked": "2026-11-13",
+  "method": "Case-insensitive normalized brand/alias matching against SVG brand filenames and folders, using complete GitHub trees; not an exhaustive historical or semantic audit.",
+  "sources": {
+    "svgl": {
+      "repository": "https://github.com/pheralb/svgl",
+      "revision": "c0ec7ab121354ac1096b17b3aebbb293c8ce5600",
+      "truncated": false,
+      "asset_prefix": "static/library/"
+    },
+    "lobe": {
+      "repository": "https://github.com/lobehub/lobe-icons",
+      "revision": "a177c1e817204f8ddc0c8993610ca674fc6d9767",
+      "truncated": false,
+      "asset_prefix": "packages/static-svg/icons/"
+    },
+    "simple-icons": {
+      "repository": "https://github.com/simple-icons/simple-icons",
+      "revision": "cd796c98565fc466923fc1128b962e133fa3c612",
+      "truncated": false,
+      "asset_prefix": "icons/"
+    },
+    "thesvg": {
+      "repository": "https://github.com/glincker/thesvg",
+      "revision": "b46dda52f7e8694029fe49e75e6efa6c95b68f4f",
+      "truncated": false,
+      "asset_prefix": "public/icons/"
+    }
+  },
+  "brands": {
+    "higgsfield": {
+      "svgl": [],
+      "lobe": [],
+      "simple-icons": [],
+      "thesvg": []
+    },
+    "openrouter": {
+      "svgl": [
+        "static/library/openrouter_dark.svg",
+        "static/library/openrouter_light.svg"
+      ],
+      "lobe": [
+        "packages/static-svg/icons/openrouter-color.svg",
+        "packages/static-svg/icons/openrouter-text.svg",
+        "packages/static-svg/icons/openrouter.svg"
+      ],
+      "simple-icons": [
+        "icons/openrouter.svg"
+      ],
+      "thesvg": [
+        "public/icons/openrouter/dark.svg",
+        "public/icons/openrouter/default.svg",
+        "public/icons/openrouter/light.svg",
+        "public/icons/openrouter/mono-lobe.svg",
+        "public/icons/openrouter/mono.svg"
+      ]
+    },
+    "runware": {
+      "svgl": [],
+      "lobe": [],
+      "simple-icons": [],
+      "thesvg": []
+    },
+    "editableframes": {
+      "svgl": [],
+      "lobe": [],
+      "simple-icons": [],
+      "thesvg": []
+    },
+    "heygen": {
+      "svgl": [],
+      "lobe": [],
+      "simple-icons": [],
+      "thesvg": []
+    },
+    "stitchable": {
+      "svgl": [],
+      "lobe": [],
+      "simple-icons": [],
+      "thesvg": []
+    },
+    "black-forest-labs": {
+      "svgl": [],
+      "lobe": [
+        "packages/static-svg/icons/bfl-text.svg",
+        "packages/static-svg/icons/bfl.svg"
+      ],
+      "simple-icons": [],
+      "thesvg": [
+        "public/icons/black-forest-labs-bfl/default.svg",
+        "public/icons/black-forest-labs-bfl/mono.svg"
+      ]
+    },
+    "libtv": {
+      "svgl": [],
+      "lobe": [],
+      "simple-icons": [],
+      "thesvg": []
+    }
+  },
+  "notes": [
+    "FLUX is an ambiguous alias. This BFL coverage record includes only BFL/Black Forest Labs paths. Simple Icons flux represents the CNCF project and is not BFL coverage.",
+    "Matching asset names establish candidates, not identity equivalence or an absence proof. OpenRouter underscore theme suffixes were checked explicitly."
+  ]
+}
