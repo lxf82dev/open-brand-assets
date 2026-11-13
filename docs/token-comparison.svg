@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="480" viewBox="0 0 1000 480" role="img" aria-labelledby="title desc">
+  <title id="title">Context-text token comparison for three known-brand logo lookups</title>
+  <desc id="desc">Without the skill, reading three official brand pages and keeping source/hash receipts uses 4050 text tokens. With the skill, full skill instructions, three targeted lookups, and identical receipts use 1675. This is 2375 fewer tokens, a 58.6 percent reduction in this controlled example. This is not an end-to-end agent or billing benchmark.</desc>
+  <defs>
+    <linearGradient id="background" x2="1" y2="1"><stop stop-color="#111827"/><stop offset="1" stop-color="#0b1120"/></linearGradient>
+  </defs>
+  <style>text{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif} .number{font-variant-numeric:tabular-nums}</style>
+  <rect x="1" y="1" width="998" height="478" rx="24" fill="url(#background)" stroke="#293548"/>
+  <text x="40" y="43" font-size="14" font-weight="700" letter-spacing="2" fill="#a5b4fc">OPEN BRAND ASSETS / CONTEXT COMPARISON</text>
+  <text x="40" y="86" font-size="32" font-weight="750" fill="#f8fafc">Three logos. A smaller lookup footprint.</text>
+  <text x="40" y="116" font-size="17" fill="#aebcd0">HeyGen · Black Forest Labs · OpenRouter  /  Full skill instructions included</text>
+
+  <text x="40" y="168" font-size="20" font-weight="650" fill="#f8fafc">Without skill</text>
+  <text x="197" y="168" font-size="16" fill="#aebcd0">Read three official brand pages</text>
+  <text x="960" y="170" text-anchor="end" class="number" font-size="29" font-weight="700" fill="#f8fafc">4,050</text>
+  <rect x="40" y="187" width="920" height="35" rx="7" fill="#1e293b"/>
+  <clipPath id="baseline"><rect x="40" y="187" width="920" height="35" rx="7"/></clipPath>
+  <g clip-path="url(#baseline)"><rect x="40" y="187" width="772.1185" height="35" fill="#8b82f6"/><rect x="812.1185" y="187" width="147.8815" height="35" fill="#5eead4"/></g>
+
+  <text x="40" y="266" font-size="20" font-weight="650" fill="#f8fafc">With skill</text>
+  <text x="169" y="266" font-size="16" fill="#aebcd0">Instructions + targeted lookups</text>
+  <text x="960" y="268" text-anchor="end" class="number" font-size="29" font-weight="700" fill="#5eead4">1,675</text>
+  <rect x="40" y="285" width="920" height="35" rx="7" fill="#1e293b"/>
+  <clipPath id="filtered"><rect x="40" y="285" width="380.4938" height="35" rx="7"/></clipPath>
+  <g clip-path="url(#filtered)"><rect x="40" y="285" width="184.2272" height="35" fill="#f9bd69"/><rect x="224.2272" y="285" width="48.3852" height="35" fill="#60a5fa"/><rect x="272.6124" y="285" width="147.8815" height="35" fill="#5eead4"/></g>
+
+  <rect x="40" y="345" width="12" height="12" rx="3" fill="#8b82f6"/><text x="60" y="356" font-size="14" fill="#cbd5e1">Page text + links</text>
+  <rect x="249" y="345" width="12" height="12" rx="3" fill="#f9bd69"/><text x="269" y="356" font-size="14" fill="#cbd5e1">Skill instructions</text>
+  <rect x="464" y="345" width="12" height="12" rx="3" fill="#60a5fa"/><text x="484" y="356" font-size="14" fill="#cbd5e1">Lookup output</text>
+  <rect x="650" y="345" width="12" height="12" rx="3" fill="#5eead4"/><text x="670" y="356" font-size="14" fill="#cbd5e1">Identical receipts on both sides</text>
+
+  <path d="M40 380h920" stroke="#293548"/>
+  <text x="40" y="418" font-size="27" font-weight="700" fill="#5eead4">58.6% fewer text tokens in this example</text>
+  <text x="40" y="448" font-size="15" fill="#aebcd0">Measured 2026-11-13 · o200k_base · Context payloads, not an end-to-end agent or billing benchmark</text>
+</svg>

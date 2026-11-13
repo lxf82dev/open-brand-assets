@@ -1,0 +1,131 @@
+{
+  "measured_at": "2026-11-13T05:36:47+00:00",
+  "kind": "controlled-context-payload-comparison-not-agent-billing",
+  "task": "Retrieve one supplied logo variant each for HeyGen, Black Forest Labs, and OpenRouter, retaining source/hash receipts.",
+  "tokenizer": {
+    "package": "tiktoken",
+    "version": "0.12.0",
+    "encoding": "o200k_base"
+  },
+  "root_commit": "4d7b9cb142c7def8099429cef345209ae10f7640",
+  "inputs": {
+    "pages": [
+      {
+        "brand": "heygen",
+        "url": "https://www.heygen.com/brand-kit",
+        "html_sha256": "6185572226a7996c726c6eaf64e88c540659f78414694175a18b39fd16b9892f",
+        "counted_text_sha256": "ace35580c81c861c480837726804bc532c39734761a2b33384e67fa6f46b5e31",
+        "tokens": 1843,
+        "characters": 7011,
+        "asset_links": 18
+      },
+      {
+        "brand": "black-forest-labs",
+        "url": "https://bfl.ai/brand",
+        "html_sha256": "df86895f37f82feea15aec5851025a3886986fab2732f3b06c0fe9ccc21d9098",
+        "counted_text_sha256": "3215d391d928cc3d3e34931cb0acdda6788eea0fd588af569360fb400c6be257",
+        "tokens": 811,
+        "characters": 3692,
+        "asset_links": 19
+      },
+      {
+        "brand": "openrouter",
+        "url": "https://openrouter.ai/brand",
+        "html_sha256": "33f7a37170e74242111cd30dc4d1575e1237ab524f2362894b9c1ace6b9469b4",
+        "counted_text_sha256": "05512531a5c01cd553bd5636322ac5803e32c75c1027f1b79cafd5282a9c8fa9",
+        "tokens": 745,
+        "characters": 2783,
+        "asset_links": 25
+      }
+    ],
+    "lookups": [
+      {
+        "brand": "heygen",
+        "command": [
+          "python3",
+          "logos.py",
+          "search",
+          "HeyGen",
+          "--source",
+          "ours",
+          "--limit",
+          "1",
+          "--offline"
+        ],
+        "stdout_sha256": "821c84c7b871e04a06a2875de1861dd734e9cd642cb10901ad7b9aa2ee57d24f",
+        "tokens": 79
+      },
+      {
+        "brand": "black-forest-labs",
+        "command": [
+          "python3",
+          "logos.py",
+          "search",
+          "BFL",
+          "--source",
+          "ours",
+          "--limit",
+          "1",
+          "--offline"
+        ],
+        "stdout_sha256": "cefbd273b9f416b95170a2d51a083b40ba4643aabb68dc4b6f8b5f9dfa99a68a",
+        "tokens": 70
+      },
+      {
+        "brand": "openrouter",
+        "command": [
+          "python3",
+          "logos.py",
+          "search",
+          "OpenRouter",
+          "--source",
+          "ours",
+          "--limit",
+          "1",
+          "--offline"
+        ],
+        "stdout_sha256": "32a44d3956271b17c400fda6116a2bf177b8225935977ae8ede04394914305ea",
+        "tokens": 64
+      }
+    ],
+    "receipts": [
+      {
+        "brand": "heygen",
+        "variant": "heygen-full-black-color-logo",
+        "sha256": "ca534b437ab07668374b0af934bd1b1370cc309eea7bc78a733baee8291c30a1",
+        "tokens": 238
+      },
+      {
+        "brand": "black-forest-labs",
+        "variant": "logotype-black",
+        "sha256": "11b5f57572d2730eef9b09804edd79f0494b663d204712c3b9ca844afdbd3282",
+        "tokens": 202
+      },
+      {
+        "brand": "openrouter",
+        "variant": "glyph-cloud",
+        "sha256": "385bbf00cd5718ad652fdfc05b4b4e7d0ea3a834cfd807e1133d3bee2b9a7c81",
+        "tokens": 211
+      }
+    ],
+    "skill_instructions": {
+      "tokens": 811,
+      "sha256": "db1ca1a5a95a38b7dddab389bf90180686469517536acc7d0b43e1200a262476"
+    }
+  },
+  "totals": {
+    "without_skill_page_reading": 4050,
+    "with_skill_targeted_lookup": 1675,
+    "difference": 2375,
+    "reduction_percent": 58.6
+  },
+  "method": [
+    "Baseline: official page main/body text plus deduplicated SVG/PNG/ZIP URLs; excludes scripts, styles, SVG markup, navigation, header, footer, and raw HTML.",
+    "Skill: complete SKILL.md loaded once plus plain-text search --source ours --limit 1 output for each known brand.",
+    "Both totals include identical normalized fetch source/hash/usage receipts for the same three delivered variants.",
+    "Counts are sums of separately tokenized text payloads, not provider request usage. Asset bytes stay on disk in both scenarios.",
+    "Does not measure model reasoning/output, chat/tool envelopes, installation, visual inspection, policy review, network latency, or API billing.",
+    "Baseline URLs and local brand coverage are known in advance. Shorter page extraction or custom scripted lookup can match or beat the skill. Broad searches and full JSON output use more context.",
+    "Official pages can change. Source-content hashes record this run; a future live run may produce different numbers. No third-party page text is redistributed in this report."
+  ]
+}
