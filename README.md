@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/open-brand-assets.svg" alt="" width="96" height="96">
+
 # Open Brand Assets
 
 ### Real logos for coding agents. More room for the work that matters.

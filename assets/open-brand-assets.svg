@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Open Brand Assets</title>
+  <rect width="64" height="64" rx="14" fill="#211b35"/>
+  <path d="M26 15H18v34h8M38 15h8v10M46 39v10h-8" fill="none" stroke="#bda4ff" stroke-width="4" stroke-linecap="square"/>
+  <path d="M32 21l3.2 7.8L43 32l-7.8 3.2L32 43l-3.2-7.8L21 32l7.8-3.2z" fill="#a78bfa"/>
+  <path d="M48 27v10M43 32h10" stroke="#67e8cf" stroke-width="3" stroke-linecap="square"/>
+</svg>
